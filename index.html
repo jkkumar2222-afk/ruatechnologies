@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rua Technologies | Enterprise Software, Cloud & Security</title>
+<meta name="description" content="Rua Technologies helps organizations procure, deploy, govern, and support enterprise software, cloud platforms, and cybersecurity from one accountable partner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #142033;
+    --ink-2: #26364d;
+    --muted: #647084;
+    --faint: #8994a6;
+    --line: #dce3ed;
+    --panel: #ffffff;
+    --surface: #f5f7fa;
+    --surface-2: #edf2f7;
+    --navy: #0b2a4a;
+    --blue: #0aa8ff;
+    --cyan: #22d7f5;
+    --violet: #6128f2;
+    --magenta: #ff1678;
+    --green: #16705a;
+    --amber: #b77816;
+    --shadow: 0 22px 70px rgba(34, 43, 90, 0.14);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: #fff;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; max-width: 100%; }
+  button, input, select, textarea { font: inherit; }
+
+  .wrap {
+    width: min(1160px, calc(100% - 40px));
+    margin: 0 auto;
+  }
+
+  .topbar {
+    background: var(--navy);
+    color: rgba(255,255,255,0.78);
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .topbar .wrap {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  .topbar strong { color: #fff; font-weight: 700; }
+  .topbar .meta { display: flex; gap: 18px; flex-wrap: wrap; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: 0;
+  }
+  .brand-logo {
+    width: 148px;
+    height: 76px;
+    object-fit: contain;
+    border-radius: 9px;
+  }
+  .brand small {
+    display: block;
+    margin-top: 1px;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  nav a:hover { color: var(--navy); }
+  .actions { display: flex; align-items: center; gap: 10px; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 17px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: #fff;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(20,32,51,0.1); }
+  .btn.primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .btn.primary:hover { background: var(--violet); border-color: var(--violet); }
+
+  .hero {
+    background:
+      radial-gradient(circle at 78% 18%, rgba(255,22,120,0.33), transparent 28%),
+      radial-gradient(circle at 58% 26%, rgba(34,215,245,0.34), transparent 24%),
+      linear-gradient(116deg, rgba(7,21,49,0.98), rgba(30,20,95,0.95) 52%, rgba(11,42,74,0.94)),
+      linear-gradient(135deg, #071531, #211060);
+    color: #fff;
+    overflow: hidden;
+  }
+  .hero-grid {
+    min-height: 640px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
+    gap: 58px;
+    align-items: center;
+    padding: 72px 0 64px;
+  }
+  .eyebrow {
+    margin: 0 0 14px;
+    color: #7dd7df;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 {
+    margin-bottom: 22px;
+    max-width: 760px;
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.04;
+    letter-spacing: 0;
+  }
+  .lede {
+    max-width: 630px;
+    margin-bottom: 30px;
+    color: rgba(255,255,255,0.78);
+    font-size: 18px;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 42px; }
+  .hero .btn { border-color: rgba(255,255,255,0.22); }
+  .hero .btn.primary { background: #fff; color: var(--navy); border-color: #fff; }
+  .hero .btn.secondary { background: rgba(255,255,255,0.08); color: #fff; }
+
+  .hero-brand-card {
+    margin-bottom: 24px;
+    width: min(430px, 100%);
+    padding: 20px 24px;
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+  }
+  .hero-brand-card img {
+    width: 100%;
+    height: auto;
+    max-height: 230px;
+    object-fit: contain;
+  }
+
+  .home-services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .home-service {
+    min-height: 214px;
+    padding: 22px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+  }
+  .home-service-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--magenta), var(--blue) 52%, var(--violet));
+    font-weight: 800;
+    font-size: 13px;
+  }
+  .home-service h3 {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 19px;
+  }
+  .home-service p {
+    margin-bottom: 16px;
+    color: rgba(255,255,255,0.74);
+    font-size: 14px;
+  }
+  .home-service ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 6px;
+    color: rgba(255,255,255,0.84);
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .home-service li {
+    position: relative;
+    padding-left: 14px;
+  }
+  .home-service li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--cyan);
+  }
+
+  .proof {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 9px;
+    background: rgba(255,255,255,0.13);
+    max-width: 620px;
+  }
+  .proof div {
+    min-height: 92px;
+    padding: 16px 18px;
+    background: rgba(255,255,255,0.07);
+  }
+  .proof b { display: block; color: #fff; font-size: 25px; line-height: 1.1; }
+  .proof span { display: block; margin-top: 7px; color: rgba(255,255,255,0.7); font-size: 12px; font-weight: 600; }
+
+  .command-center {
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.96);
+    color: var(--ink);
+    box-shadow: 0 30px 90px rgba(0,0,0,0.28);
+    overflow: hidden;
+  }
+  .cc-head {
+    min-height: 62px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    background: #fbfcfe;
+  }
+  .cc-head b { color: var(--navy); }
+  .status-dot {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .status-dot::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+  .cc-body {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    min-height: 394px;
+  }
+  .cc-sidebar {
+    padding: 18px;
+    background: var(--surface);
+    border-right: 1px solid var(--line);
+  }
+  .health {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 14px;
+  }
+  .health small { color: var(--muted); font-size: 12px; font-weight: 700; }
+  .health strong { display: block; margin-top: 4px; color: var(--navy); font-size: 22px; }
+  .bar {
+    height: 8px;
+    border-radius: 99px;
+    background: var(--surface-2);
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  .bar span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--magenta), var(--blue), var(--violet)); }
+  .cc-main { padding: 20px; }
+  .panel-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 16px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .stack-list { display: grid; gap: 10px; }
+  .stack-item {
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 13px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+  }
+  .stack-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: var(--blue);
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .stack-item b { display: block; color: var(--ink-2); font-size: 14px; }
+  .stack-item small { color: var(--faint); font-size: 12px; }
+  .pill {
+    padding: 5px 9px;
+    border-radius: 99px;
+    color: var(--green);
+    background: #e8f6f1;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  .partner-strip {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    background: #fff;
+  }
+  .partner-strip .wrap {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+  .strip-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .logo-tile {
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    color: var(--ink-2);
+    background: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    padding: 8px;
+  }
+  .logo-mark {
+    width: 56px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    color: #fff;
+    background: linear-gradient(135deg, var(--magenta), var(--blue) 52%, var(--violet));
+    font-size: 12px;
+    font-weight: 800;
+  }
+  .logo-mark img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+
+  section { padding: 88px 0; }
+  section.alt { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-head {
+    max-width: 710px;
+    margin-bottom: 38px;
+  }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  h2 {
+    margin-bottom: 14px;
+    color: var(--navy);
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.12;
+    letter-spacing: 0;
+  }
+  .section-head p { color: var(--muted); font-size: 16px; }
+
+  .solutions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .solution {
+    min-height: 286px;
+    padding: 28px;
+    border-right: 1px solid var(--line);
+  }
+  .solution:nth-child(3n) { border-right: 0; }
+  .solution:nth-child(n+4) { border-top: 1px solid var(--line); }
+  .solution .icon {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: linear-gradient(135deg, var(--magenta), var(--blue) 52%, var(--violet));
+    font-weight: 800;
+  }
+  .solution h3 { margin-bottom: 9px; color: var(--ink); font-size: 18px; }
+  .solution p { color: var(--muted); font-size: 14px; }
+  .solution ul {
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 8px;
+    color: var(--ink-2);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .solution li {
+    position: relative;
+    padding-left: 18px;
+  }
+  .solution li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.68em;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background: var(--cyan);
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .product-card {
+    min-height: 236px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+  }
+  .product-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .product-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: #fff;
+    flex: 0 0 auto;
+  }
+  .product-logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  .product-logo.service-badge {
+    color: #fff;
+    background: linear-gradient(135deg, var(--magenta), var(--blue) 52%, var(--violet));
+    border: 0;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  .product-card h3 {
+    margin-bottom: 2px;
+    color: var(--navy);
+    font-size: 16px;
+  }
+  .product-card small {
+    color: var(--faint);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .product-card p {
+    margin-bottom: 14px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .versions {
+    margin-bottom: 13px;
+    padding: 10px 11px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--surface);
+    color: var(--ink-2);
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .versions b {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--navy);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .product-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 7px;
+    color: var(--ink-2);
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .product-list li {
+    padding-left: 14px;
+    position: relative;
+  }
+  .product-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--blue);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+    gap: 56px;
+    align-items: start;
+  }
+  .assurance {
+    display: grid;
+    gap: 14px;
+  }
+  .assurance-row {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 18px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+  }
+  .num {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--blue);
+    font-weight: 800;
+  }
+  .assurance-row h3 { margin-bottom: 6px; color: var(--navy); font-size: 17px; }
+  .assurance-row p { margin-bottom: 0; color: var(--muted); font-size: 14px; }
+
+  .governance-card {
+    position: sticky;
+    top: 112px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .governance-card header {
+    position: static;
+    min-height: auto;
+    padding: 22px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+  }
+  .governance-card header b { color: var(--navy); font-size: 18px; }
+  .matrix { display: grid; }
+  .matrix div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 16px 22px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .matrix div:last-child { border-bottom: 0; }
+  .matrix strong { color: var(--ink-2); }
+  .matrix span { color: var(--green); font-weight: 800; }
+
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .step {
+    min-height: 218px;
+    padding: 24px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+  }
+  .step b {
+    display: inline-flex;
+    margin-bottom: 28px;
+    color: var(--blue);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+  .step h3 { margin-bottom: 8px; color: var(--navy); font-size: 18px; }
+  .step p { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+
+  .contact {
+    background:
+      linear-gradient(90deg, rgba(11,42,74,0.96), rgba(11,42,74,0.88)),
+      var(--navy);
+    color: #fff;
+  }
+  .contact h2 { color: #fff; }
+  .contact .section-head p { color: rgba(255,255,255,0.74); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.86fr) minmax(320px, 0.54fr);
+    gap: 46px;
+    align-items: start;
+  }
+  .contact-lines {
+    display: grid;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  .contact-line {
+    padding: 17px 0;
+    border-top: 1px solid rgba(255,255,255,0.16);
+    display: grid;
+    grid-template-columns: 116px 1fr;
+    gap: 18px;
+    color: rgba(255,255,255,0.78);
+    font-size: 14px;
+  }
+  .contact-line strong { color: #fff; text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; }
+  .contact-card {
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+  }
+  .contact-card img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 22px;
+  }
+  .contact-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 22px;
+  }
+  .contact-card p {
+    margin-bottom: 20px;
+    color: rgba(255,255,255,0.74);
+    font-size: 14px;
+  }
+  .contact-card .btn {
+    width: 100%;
+    min-height: 48px;
+    border-color: #fff;
+    background: #fff;
+    color: var(--navy);
+  }
+
+  footer {
+    padding: 36px 0;
+    background: #081d33;
+    color: rgba(255,255,255,0.64);
+    font-size: 13px;
+  }
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  footer strong { color: #fff; }
+
+  :focus-visible { outline: 3px solid rgba(36,87,214,0.35); outline-offset: 3px; }
+
+  @media (max-width: 980px) {
+    nav { display: none; }
+    .hero-grid, .two-col, .contact-grid { grid-template-columns: 1fr; }
+    .hero-grid { min-height: auto; }
+    .command-center { max-width: 640px; }
+    .home-services { max-width: 720px; }
+    .solutions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .solution:nth-child(3n) { border-right: 1px solid var(--line); }
+    .solution:nth-child(2n) { border-right: 0; }
+    .solution:nth-child(n+3) { border-top: 1px solid var(--line); }
+    .process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .partner-strip .wrap { grid-template-columns: 1fr; }
+    .logos { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 640px) {
+    .wrap { width: min(100% - 28px, 1160px); }
+    .topbar .wrap, .nav { align-items: flex-start; }
+    .topbar .wrap { padding: 10px 0; flex-direction: column; }
+    .nav { padding: 14px 0; min-height: auto; }
+    .actions .btn:not(.primary) { display: none; }
+    .hero-grid { padding: 50px 0; gap: 36px; }
+    .proof, .home-services, .solutions, .process, .product-grid { grid-template-columns: 1fr; }
+    .solution, .solution:nth-child(2n), .solution:nth-child(3n) { border-right: 0; }
+    .solution:nth-child(n+2) { border-top: 1px solid var(--line); }
+    .cc-body { grid-template-columns: 1fr; }
+    .cc-sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
+    .stack-item { grid-template-columns: 36px 1fr; }
+    .stack-item .pill { grid-column: 2; width: max-content; }
+    .logos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .contact-line { grid-template-columns: 1fr; gap: 3px; }
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div><strong>Rua Technologies</strong> | Enterprise procurement, deployment, and support</div>
+      <div class="meta">
+        <span><a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a></span>
+        <span>Official partner and reseller channels</span>
+        <span>Cloud, security, and licensing</span>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Rua Technologies home">
+        <img class="brand-logo" src="logo-cropped.png" alt="Rua Technologies logo">
+        <span>Rua Technologies<small>Enterprise IT Partner</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#platforms">Platforms</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#products">Products</a>
+        <a href="#governance">Governance</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="actions">
+        <a class="btn" href="#solutions">Capabilities</a>
+        <a class="btn primary" href="#contact">Contact sales</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="hero-brand-card">
+            <img src="logo-cropped.png" alt="Rua Technologies logo">
+          </div>
+          <p class="eyebrow">Enterprise software, cloud, and cybersecurity</p>
+          <h1>One accountable partner for the platforms your business runs on.</h1>
+          <p class="lede">Rua Technologies helps organizations buy, deploy, govern, and support Microsoft, Google, Adobe, Autodesk, AWS, Azure, Zoho, Trend Micro, and Seqrite environments with clean licensing and operational follow-through.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Contact sales</a>
+            <a class="btn secondary" href="#governance">See governance model</a>
+          </div>
+          <div class="proof" aria-label="Business proof points">
+            <div><b>8</b><span>Global platform partner channels</span></div>
+            <div><b>17+</b><span>Software, cloud, and security lines</span></div>
+            <div><b>1</b><span>Commercial owner for renewals</span></div>
+          </div>
+        </div>
+
+        <aside class="home-services" aria-label="Featured Rua Technologies services">
+          <article class="home-service">
+            <div class="home-service-icon">M365</div>
+            <h3>Microsoft 365 Services</h3>
+            <p>Licensing, setup, migration, security configuration, and support for business and enterprise teams.</p>
+            <ul>
+              <li>Exchange, Teams, SharePoint, OneDrive</li>
+              <li>Business Basic, Standard, Premium, E3, E5</li>
+              <li>User, mailbox, and renewal management</li>
+            </ul>
+          </article>
+          <article class="home-service">
+            <div class="home-service-icon">GWS</div>
+            <h3>Google Workspace</h3>
+            <p>Business email and collaboration setup for Gmail, Drive, Meet, Calendar, and admin console.</p>
+            <ul>
+              <li>Domain, DNS, and mailbox setup</li>
+              <li>Email migration and cutover support</li>
+              <li>User access and policy configuration</li>
+            </ul>
+          </article>
+          <article class="home-service">
+            <div class="home-service-icon">AZ</div>
+            <h3>Azure Cloud</h3>
+            <p>Azure subscription planning, cloud provisioning, identity, billing visibility, and hybrid guidance.</p>
+            <ul>
+              <li>Subscription and tenant setup</li>
+              <li>Compute, storage, backup, and networking</li>
+              <li>Cost governance and support</li>
+            </ul>
+          </article>
+          <article class="home-service">
+            <div class="home-service-icon">SEC</div>
+            <h3>Security Services</h3>
+            <p>Endpoint, email, antivirus, and server protection configured around your business environment.</p>
+            <ul>
+              <li>Endpoint security and antivirus</li>
+              <li>Email filtering and anti-phishing</li>
+              <li>Security renewals and coverage review</li>
+            </ul>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <div id="platforms" class="partner-strip">
+      <div class="wrap">
+        <div class="strip-label">Authorized ecosystem</div>
+        <div class="logos" aria-label="Supported platforms">
+          <span class="logo-tile"><span class="logo-mark" style="background:#0f6cbd;">MS</span>Microsoft</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#ed2224;">AD</span>Adobe</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#0696d7;">AU</span>Autodesk</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#4285f4;">G</span>Google</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#ff9900;color:#172033;">AWS</span>AWS</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#0078d4;">AZ</span>Azure</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#d71920;">TM</span>Trend Micro</span>
+          <span class="logo-tile"><span class="logo-mark" style="background:#004c97;">SQ</span>Seqrite</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="solutions">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Solution portfolio</p>
+          <h2>Built for teams that need traceable procurement and reliable execution.</h2>
+          <p>Rua combines software resale, technical deployment, security hardening, and lifecycle support so finance, IT, and leadership work from the same view of the estate.</p>
+        </div>
+        <div class="solutions">
+          <article class="solution">
+            <div class="icon">01</div>
+            <h3>Productivity & collaboration</h3>
+            <p>Right-sized suites for everyday business communication, files, meetings, and identity.</p>
+            <ul>
+              <li>Microsoft 365 plans from Business to E5</li>
+              <li>Google Workspace administration</li>
+              <li>Zoho Email hosting and migration</li>
+            </ul>
+          </article>
+          <article class="solution">
+            <div class="icon">02</div>
+            <h3>Infrastructure & cloud</h3>
+            <p>Cloud subscriptions and server licensing structured for growth, cost control, and audit readiness.</p>
+            <ul>
+              <li>Azure and AWS account provisioning</li>
+              <li>Windows Server and SQL Server licensing</li>
+              <li>Hybrid deployment advisory</li>
+            </ul>
+          </article>
+          <article class="solution">
+            <div class="icon">03</div>
+            <h3>Creative & engineering</h3>
+            <p>Specialized software licensing for design, content, architecture, and engineering teams.</p>
+            <ul>
+              <li>Adobe Creative Cloud and Acrobat</li>
+              <li>AutoCAD licensing and renewals</li>
+              <li>Seat assignment governance</li>
+            </ul>
+          </article>
+          <article class="solution">
+            <div class="icon">04</div>
+            <h3>Cybersecurity coverage</h3>
+            <p>Endpoint, server, email, and antivirus controls aligned with the business software stack.</p>
+            <ul>
+              <li>Trend Micro endpoint protection</li>
+              <li>Seqrite antivirus and endpoint security</li>
+              <li>Email security and anti-phishing controls</li>
+            </ul>
+          </article>
+          <article class="solution">
+            <div class="icon">05</div>
+            <h3>Migration services</h3>
+            <p>Planned moves between email, collaboration, and cloud platforms with minimal business disruption.</p>
+            <ul>
+              <li>Email and mailbox migration</li>
+              <li>Account provisioning and cutover support</li>
+              <li>User communication and rollout planning</li>
+            </ul>
+          </article>
+          <article class="solution">
+            <div class="icon">06</div>
+            <h3>Lifecycle support</h3>
+            <p>Ongoing governance for renewals, changes, support requests, and emerging platform needs.</p>
+            <ul>
+              <li>Renewal tracking and true-up planning</li>
+              <li>Single invoice coordination</li>
+              <li>Direct escalation path for IT teams</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="alt">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Product details</p>
+          <h2>Platform coverage with procurement, deployment, and support details.</h2>
+          <p>Use Rua as the commercial and technical layer across the software products your teams already use.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">M365</span><div><h3>Microsoft 365</h3><small>Productivity</small></div></div>
+            <p>Business and enterprise plans for email, Office apps, Teams, OneDrive, SharePoint, and identity.</p>
+            <div class="versions"><b>Available versions</b>Business Basic, Business Standard, Business Premium, Apps for Business, E3, E5</div>
+            <ul class="product-list"><li>Exchange mailboxes and Teams rollout</li><li>OneDrive, SharePoint, and Office apps</li><li>User, mailbox, and renewal management</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">AZ</span><div><h3>Microsoft Azure</h3><small>Cloud</small></div></div>
+            <p>Cloud subscriptions and workload planning for compute, storage, networking, and hybrid services.</p>
+            <div class="versions"><b>Available services</b>Virtual Machines, Storage, Backup, Azure AD, Networking, SQL, App Services</div>
+            <ul class="product-list"><li>Subscription provisioning</li><li>Cost and billing visibility</li><li>Hybrid infrastructure guidance</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">WIN</span><div><h3>Windows & Server</h3><small>Infrastructure</small></div></div>
+            <p>Operating system and server licensing for desktops, datacenters, and branch environments.</p>
+            <div class="versions"><b>Available versions</b>Windows 11 Pro, Windows 11 Enterprise, Windows Server Standard, Datacenter</div>
+            <ul class="product-list"><li>Desktop and server licensing</li><li>CAL and volume licensing support</li><li>Activation and deployment guidance</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">SQL</span><div><h3>SQL Server</h3><small>Database</small></div></div>
+            <p>Database licensing designed around workload, core count, users, and deployment model.</p>
+            <div class="versions"><b>Available versions</b>SQL Server Standard, Enterprise, Web, Developer; per-core or Server/CAL</div>
+            <ul class="product-list"><li>On-prem and hybrid scenarios</li><li>Edition and compliance review</li><li>Core-count and user-count planning</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">AD</span><div><h3>Adobe</h3><small>Creative</small></div></div>
+            <p>Creative Cloud and Acrobat licensing for design, marketing, content, and document teams.</p>
+            <div class="versions"><b>Available versions</b>Creative Cloud All Apps, Single App, Acrobat Standard, Acrobat Pro</div>
+            <ul class="product-list"><li>Team and user licensing</li><li>Creative and document workflows</li><li>User assignment and renewal tracking</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">CAD</span><div><h3>Autodesk AutoCAD</h3><small>Engineering</small></div></div>
+            <p>CAD licensing support for engineering, architecture, construction, and technical design teams.</p>
+            <div class="versions"><b>Available versions</b>AutoCAD, AutoCAD LT, industry toolsets, single-user subscriptions</div>
+            <ul class="product-list"><li>Single-seat and team licensing</li><li>Renewal and subscription support</li><li>Deployment coordination</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">GWS</span><div><h3>Google Workspace</h3><small>Collaboration</small></div></div>
+            <p>Business email and collaboration suite for Gmail, Drive, Meet, Calendar, and admin controls.</p>
+            <div class="versions"><b>Available versions</b>Business Starter, Business Standard, Business Plus, Enterprise plans</div>
+            <ul class="product-list"><li>Gmail, Drive, Meet, and Calendar</li><li>DNS and mailbox setup</li><li>Migration from legacy email</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">AWS</span><div><h3>Amazon Web Services</h3><small>Cloud</small></div></div>
+            <p>AWS account setup, commercial support, billing review, and cloud consumption planning.</p>
+            <div class="versions"><b>Available services</b>EC2, S3, RDS, VPC, Backup, IAM, billing and support plans</div>
+            <ul class="product-list"><li>Account provisioning</li><li>Reserved instance planning</li><li>Usage and billing support</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">ZO</span><div><h3>Zoho Email</h3><small>Email</small></div></div>
+            <p>Business-grade email hosting for teams that need reliable mail without a full productivity suite.</p>
+            <div class="versions"><b>Available versions</b>Mail Lite, Mail Premium, Workplace plans, custom domain email</div>
+            <ul class="product-list"><li>Domain and mailbox setup</li><li>User and alias management</li><li>Email migration assistance</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">TM</span><div><h3>Trend Micro</h3><small>Security</small></div></div>
+            <p>Endpoint, server, and email security licensing with centralized protection and reporting.</p>
+            <div class="versions"><b>Available solutions</b>Endpoint security, server protection, email security, cloud workload security</div>
+            <ul class="product-list"><li>Endpoint protection</li><li>Email security controls</li><li>Threat visibility and policy setup</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">SQ</span><div><h3>Seqrite</h3><small>Security</small></div></div>
+            <p>Antivirus and endpoint security coverage for growing businesses and distributed device fleets.</p>
+            <div class="versions"><b>Available solutions</b>Endpoint Security, EPS Cloud, antivirus, data protection, server protection</div>
+            <ul class="product-list"><li>Antivirus licensing</li><li>Endpoint security policies</li><li>Renewal and compliance support</li></ul>
+          </article>
+          <article class="product-card">
+            <div class="product-head"><span class="product-logo service-badge">MIG</span><div><h3>Migration Services</h3><small>Services</small></div></div>
+            <p>Structured migration planning for email, cloud, user accounts, collaboration suites, and security rollout.</p>
+            <div class="versions"><b>Available services</b>Email migration, tenant migration, cloud migration, security rollout, user onboarding</div>
+            <ul class="product-list"><li>Email migration and cutover</li><li>User provisioning</li><li>Post-migration support</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="governance" class="alt">
+      <div class="wrap two-col">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Enterprise governance</p>
+            <h2>Procurement discipline without slowing the business down.</h2>
+            <p>Enterprise buyers need more than product names. They need a clear owner for entitlements, renewals, support, risk, and commercial visibility.</p>
+          </div>
+          <div class="assurance">
+            <div class="assurance-row">
+              <span class="num">1</span>
+              <div><h3>Commercial clarity</h3><p>Consolidated quotes, license counts, renewal windows, and invoicing that finance can reconcile.</p></div>
+            </div>
+            <div class="assurance-row">
+              <span class="num">2</span>
+              <div><h3>Technical alignment</h3><p>Edition selection, user provisioning, migrations, and security controls matched to operational requirements.</p></div>
+            </div>
+            <div class="assurance-row">
+              <span class="num">3</span>
+              <div><h3>Audit readiness</h3><p>Seat counts, server entitlements, subscription records, and renewal evidence kept visible before issues become urgent.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="governance-card" aria-label="Governance model">
+          <header><b>What Rua owns for your team</b></header>
+          <div class="matrix">
+            <div><strong>License procurement</strong><span>Rua</span></div>
+            <div><strong>Renewal calendar</strong><span>Rua</span></div>
+            <div><strong>Migration planning</strong><span>Joint</span></div>
+            <div><strong>Security configuration</strong><span>Rua</span></div>
+            <div><strong>User enablement</strong><span>Joint</span></div>
+            <div><strong>Vendor escalation</strong><span>Rua</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Engagement process</p>
+          <h2>A structured path from current-state review to supported rollout.</h2>
+          <p>The process is designed for practical business decisions: what to buy, how to deploy, how to secure it, and how to keep it governed.</p>
+        </div>
+        <div class="process">
+          <article class="step"><b>PHASE 01</b><h3>Assess</h3><p>Inventory current users, applications, renewals, server workloads, cloud accounts, and security coverage.</p></article>
+          <article class="step"><b>PHASE 02</b><h3>Design</h3><p>Recommend editions, seat counts, cloud structure, migration approach, and security controls with cost visibility.</p></article>
+          <article class="step"><b>PHASE 03</b><h3>Deploy</h3><p>Provision licenses, configure tenants, schedule cutovers, assign users, and validate the production environment.</p></article>
+          <article class="step"><b>PHASE 04</b><h3>Operate</h3><p>Track renewals, handle changes, coordinate support, and keep the technology portfolio aligned with business needs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-head">
+            <p class="eyebrow">Contact sales</p>
+            <h2>Bring your licensing, cloud, and security stack into one managed view.</h2>
+            <p>For licensing, cloud, cybersecurity, migration, and renewal support, contact Rua Technologies directly by email.</p>
+          </div>
+          <div class="contact-lines">
+            <div class="contact-line"><strong>Email</strong><span><a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a></span></div>
+            <div class="contact-line"><strong>Scope</strong><span>Software licensing, cloud subscriptions, endpoint security, email security, migrations, renewals</span></div>
+            <div class="contact-line"><strong>Best for</strong><span>Growing businesses, multi-location teams, finance-led procurement, IT teams preparing for audits</span></div>
+            <div class="contact-line"><strong>Response</strong><span>Business review and next-step recommendation</span></div>
+          </div>
+        </div>
+        <aside class="contact-card" aria-label="Rua Technologies sales contact">
+          <img src="logo-cropped.png" alt="Rua Technologies logo">
+          <h3>Speak with Rua Technologies</h3>
+          <p>Email the sales team for platform licensing, product renewals, cloud subscriptions, security coverage, or migration planning.</p>
+          <a class="btn" href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>Rua Technologies</strong> | Enterprise software, cloud, and security partner | <a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a></div>
+      <div>Microsoft, Adobe, Autodesk, Google, AWS, Azure, Zoho, Trend Micro, and Seqrite names belong to their respective owners.</div>
+    </div>
+  </footer>
+</body>
+</html>

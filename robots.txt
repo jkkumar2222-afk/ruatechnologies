@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.ruatechnologies.com/sitemap.xml
+Sitemap: https://ruatechnologies.com/sitemap.xml

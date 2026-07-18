@@ -35,6 +35,81 @@
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ruatechnologies.com/"},{"@type":"ListItem","position":2,"name":"Cybersecurity","item":"https://ruatechnologies.com/cybersecurity.html"}]}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
+<style>
+  /* Cybersecurity page — hero coverage strip, proof stats */
+  #hero { padding-bottom: 0; }
+  #hero .section-head { margin-bottom: 30px; }
+
+  .coverage-row {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .coverage-row .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 99px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-2);
+    box-shadow: 0 1px 2px rgba(20,32,51,0.04);
+  }
+  .coverage-row .chip svg { width: 16px; height: 16px; flex: 0 0 auto; }
+  .coverage-row .sep { color: var(--faint); font-size: 13px; }
+
+  #cyber-stats { padding: 34px 0 6px; }
+  .cyber-stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(20,32,51,0.03), 0 10px 24px rgba(20,32,51,0.04);
+  }
+  .cyber-stat {
+    padding: 22px 18px;
+    text-align: center;
+    border-right: 1px solid var(--line);
+  }
+  .cyber-stat:last-child { border-right: none; }
+  .cyber-stat b {
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+  .cyber-stat span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .cyber-stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cyber-stat:nth-child(2) { border-right: none; }
+    .cyber-stat:nth-child(1), .cyber-stat:nth-child(2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 640px) {
+    .cyber-stats-strip { grid-template-columns: 1fr; }
+    .cyber-stat { border-right: none !important; border-bottom: 1px solid var(--line); }
+    .cyber-stat:last-child { border-bottom: none; }
+  }
+</style>
 <meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/> <meta content="Discover Cybersecurity solutions from Rua Technologies. Expert consulting, implementation, cloud, security and managed IT services." name="description"/>
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
 <meta content="Discover Cybersecurity | Rua Technologies. Rua Technologies delivers Microsoft, Azure, AWS, cybersecurity, cloud, and managed IT solutions." name="description"/>
@@ -57,7 +132,7 @@
 <header>
 <div class="wrap nav">
 <a aria-label="Rua Technologies home" class="brand" href="index.html">
-<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>&gt;
+<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>
 <span>Rua Technologies<small>Enterprise IT Partner</small></span>
 </a>
 <nav aria-label="Primary navigation" role="navigation">
@@ -177,7 +252,26 @@
 <p>Rua Technologies delivers enterprise IT solutions including Microsoft 365, Azure, cybersecurity, cloud migration, managed IT services, and digital transformation tailored to modern businesses.</p>
 <p>Rua Technologies licenses, configures, and monitors endpoint, network, and email security from Trend Micro, Seqrite, Sophos, CrowdStrike, Fortinet, Palo Alto Networks, SonicWall, Cisco, Kaspersky, and ESET for organizations across India.</p>
 </div>
+<div class="coverage-row">
+<span class="chip"><svg aria-hidden="true" fill="none" stroke="#0aa8ff" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="1.5" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg>Endpoint</span>
+<span class="sep">·</span>
+<span class="chip"><svg aria-hidden="true" fill="none" stroke="#6128f2" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg>Network</span>
+<span class="sep">·</span>
+<span class="chip"><svg aria-hidden="true" fill="none" stroke="#d93876" stroke-width="1.8" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6"></path></svg>Email</span>
+<span class="sep">·</span>
+<span class="chip"><svg aria-hidden="true" fill="none" stroke="#dc2626" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg>XDR</span>
+</div>
 <div class="m365-action"><a class="btn primary" href="contact.html">Talk to a security specialist</a></div>
+</div>
+</section>
+<section id="cyber-stats">
+<div class="wrap">
+<div class="cyber-stats-strip">
+<div class="cyber-stat"><b>10</b><span>Security vendors supported</span></div>
+<div class="cyber-stat"><b>4</b><span>Protection domains covered</span></div>
+<div class="cyber-stat"><b>24×7</b><span>Monitoring &amp; alerting</span></div>
+<div class="cyber-stat"><b>Multi-vendor</b><span>No single-vendor lock-in</span></div>
+</div>
 </div>
 </section>
 <section class="alt" id="trend-micro">
@@ -186,7 +280,7 @@
 <p class="eyebrow">Trend Micro</p>
 <h2>Endpoint, server, email, and XDR protection.</h2>
 </div>
-<div class="product-grid"><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Worry-Free Services</h3><small>Business · SMB endpoint security</small></div></div><p>Cloud-managed antivirus and endpoint protection built for small businesses without a dedicated IT security team.</p><div class="versions"><b>Included</b>Antivirus, ransomware protection, web threat protection, cloud-based console</div><ul class="product-list"><li>Best for small businesses</li><li>No on-site server required</li><li>Simple cloud console</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Worry-Free Services Advanced</h3><small>Business · Endpoint + email security</small></div></div><p>Everything in Worry-Free Services plus hosted email security for Exchange Online and hosted mailboxes.</p><div class="versions"><b>Included</b>Endpoint protection, Exchange/hosted email security, spam and phishing filtering</div><ul class="product-list"><li>Best for small businesses</li><li>Adds email security layer</li><li>Single console for endpoints and mail</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Apex One</h3><small>Enterprise · Endpoint protection &amp; EDR</small></div></div><p>Enterprise endpoint protection with detection and response capabilities for larger, more complex environments.</p><div class="versions"><b>Included</b>EDR, ransomware protection, vulnerability protection, endpoint sensor</div><ul class="product-list"><li>No user minimum by request</li><li>On-prem or SaaS deployment</li><li>Integrates with Vision One XDR</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Cloud One – Workload Security</h3><small>Enterprise · Server &amp; cloud workload protection</small></div></div><p>Server and cloud workload protection covering physical, virtual, and cloud instances from a single platform.</p><div class="versions"><b>Included</b>Anti-malware, intrusion prevention, integrity monitoring, application control</div><ul class="product-list"><li>Covers physical, virtual, and cloud servers</li><li>Pay-as-you-go or subscription licensing</li><li>Supports AWS, Azure, and on-prem</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Email Security</h3><small>Enterprise · Hosted email protection</small></div></div><p>Cloud-based email security that filters spam, phishing, and business email compromise before it reaches Exchange or Gmail.</p><div class="versions"><b>Included</b>Anti-spam, anti-phishing, BEC protection, sandbox malware analysis</div><ul class="product-list"><li>Works with Microsoft 365 and Google Workspace</li><li>Business email compromise (BEC) detection</li><li>No on-site hardware required</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/>&gt;</span><div><h3>Trend Micro Vision One</h3><small>Enterprise · XDR &amp; unified security</small></div></div><p>A unified detection and response platform correlating signals across endpoints, email, servers, and cloud workloads.</p><div class="versions"><b>Included</b>Cross-layer detection and response (XDR), threat investigation, automated response</div><ul class="product-list"><li>Correlates alerts across the environment</li><li>Reduces investigation time</li><li>Add-on to existing Trend Micro products</li></ul></article></div>
+<div class="product-grid"><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Worry-Free Services</h3><small>Business · SMB endpoint security</small></div></div><p>Cloud-managed antivirus and endpoint protection built for small businesses without a dedicated IT security team.</p><div class="versions"><b>Included</b>Antivirus, ransomware protection, web threat protection, cloud-based console</div><ul class="product-list"><li>Best for small businesses</li><li>No on-site server required</li><li>Simple cloud console</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Worry-Free Services Advanced</h3><small>Business · Endpoint + email security</small></div></div><p>Everything in Worry-Free Services plus hosted email security for Exchange Online and hosted mailboxes.</p><div class="versions"><b>Included</b>Endpoint protection, Exchange/hosted email security, spam and phishing filtering</div><ul class="product-list"><li>Best for small businesses</li><li>Adds email security layer</li><li>Single console for endpoints and mail</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Apex One</h3><small>Enterprise · Endpoint protection &amp; EDR</small></div></div><p>Enterprise endpoint protection with detection and response capabilities for larger, more complex environments.</p><div class="versions"><b>Included</b>EDR, ransomware protection, vulnerability protection, endpoint sensor</div><ul class="product-list"><li>No user minimum by request</li><li>On-prem or SaaS deployment</li><li>Integrates with Vision One XDR</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Cloud One – Workload Security</h3><small>Enterprise · Server &amp; cloud workload protection</small></div></div><p>Server and cloud workload protection covering physical, virtual, and cloud instances from a single platform.</p><div class="versions"><b>Included</b>Anti-malware, intrusion prevention, integrity monitoring, application control</div><ul class="product-list"><li>Covers physical, virtual, and cloud servers</li><li>Pay-as-you-go or subscription licensing</li><li>Supports AWS, Azure, and on-prem</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Email Security</h3><small>Enterprise · Hosted email protection</small></div></div><p>Cloud-based email security that filters spam, phishing, and business email compromise before it reaches Exchange or Gmail.</p><div class="versions"><b>Included</b>Anti-spam, anti-phishing, BEC protection, sandbox malware analysis</div><ul class="product-list"><li>Works with Microsoft 365 and Google Workspace</li><li>Business email compromise (BEC) detection</li><li>No on-site hardware required</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Vision One</h3><small>Enterprise · XDR &amp; unified security</small></div></div><p>A unified detection and response platform correlating signals across endpoints, email, servers, and cloud workloads.</p><div class="versions"><b>Included</b>Cross-layer detection and response (XDR), threat investigation, automated response</div><ul class="product-list"><li>Correlates alerts across the environment</li><li>Reduces investigation time</li><li>Add-on to existing Trend Micro products</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Cloud One – Network Security</h3><small>Enterprise · Cloud IDS/IPS</small></div></div><p>Cloud-native intrusion detection and prevention deployed inline or out-of-band to protect AWS and hybrid network traffic.</p><div class="versions"><b>Included</b>Inline and out-of-band IPS, virtual patching, network-layer threat detection</div><ul class="product-list"><li>Deploys alongside AWS workloads</li><li>Virtual patching for unpatched systems</li><li>Integrates with Cloud One dashboard</li></ul></article><article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Trend Micro Bronze Partner" decoding="async" height="59" loading="lazy" src="images/trend-micro-bronze-partner.png" width="220"/></span><div><h3>Trend Micro Cloud One – Conformity</h3><small>Enterprise · Cloud security posture management</small></div></div><p>Continuous checks against cloud security and compliance best practices across AWS, Azure, and Google Cloud accounts.</p><div class="versions"><b>Included</b>Cloud posture scanning, compliance templates (CIS, PCI-DSS, HIPAA), auto-remediation guidance</div><ul class="product-list"><li>Multi-cloud account scanning</li><li>Built-in compliance frameworks</li><li>Risk-prioritized findings</li></ul></article></div>
 </div>
 </section>
 <section id="vendors">
@@ -196,50 +290,50 @@
 <h2>Endpoint and network protection from leading vendors.</h2>
 </div>
 <div class="product-grid"><article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="Seqrite logo" decoding="async" height="220" loading="lazy" src="images/seqrite-logo.png" width="220"/>&gt;</span><div><h3>Seqrite</h3><small>Endpoint Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="Seqrite logo" decoding="async" height="220" loading="lazy" src="images/seqrite-logo.png" width="220"/></span><div><h3>Seqrite</h3><small>Endpoint Protection</small></div></div>
 <p>Antivirus and endpoint security coverage for growing businesses and distributed device fleets.</p>
 <div class="versions"><b>Available solutions</b>Endpoint Security, EPS Cloud, antivirus, data protection, server protection</div>
 <ul class="product-list"><li>Antivirus licensing</li><li>Endpoint security policies</li><li>Renewal and compliance support</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="Fortinet logo" decoding="async" height="166" loading="lazy" src="images/fortinet-logo.png" width="220"/>&gt;</span><div><h3>Fortinet</h3><small>Network Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="Fortinet logo" decoding="async" height="166" loading="lazy" src="images/fortinet-logo.png" width="220"/></span><div><h3>Fortinet</h3><small>Network Protection</small></div></div>
 <p>FortiGate next-generation firewalls for perimeter and internal network segmentation.</p>
 <div class="versions"><b>Available solutions</b>FortiGate NGFW, FortiAnalyzer, FortiManager, SD-WAN licensing</div>
 <ul class="product-list"><li>Firewall sizing and licensing</li><li>Rule and policy configuration</li><li>Firmware and support renewal</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="Palo Alto Networks logo" decoding="async" height="166" loading="lazy" src="images/paloalto-logo.png" width="220"/>&gt;</span><div><h3>Palo Alto Networks</h3><small>Network Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="Palo Alto Networks logo" decoding="async" height="166" loading="lazy" src="images/paloalto-logo.png" width="220"/></span><div><h3>Palo Alto Networks</h3><small>Network Protection</small></div></div>
 <p>Next-generation firewalls with application-aware inspection for demanding network environments.</p>
 <div class="versions"><b>Available solutions</b>PA-Series NGFW, Panorama management, GlobalProtect VPN</div>
 <ul class="product-list"><li>Appliance and license selection</li><li>Policy and zone setup</li><li>Renewal and support tracking</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="SonicWall logo" decoding="async" height="123" loading="lazy" src="images/sonicwall-logo.png" width="220"/>&gt;</span><div><h3>SonicWall</h3><small>Network Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="SonicWall logo" decoding="async" height="123" loading="lazy" src="images/sonicwall-logo.png" width="220"/></span><div><h3>SonicWall</h3><small>Network Protection</small></div></div>
 <p>Firewall appliances sized for small and mid-size networks needing unified threat management.</p>
 <div class="versions"><b>Available solutions</b>TZ and NSa series firewalls, Capture Security Center, VPN licensing</div>
 <ul class="product-list"><li>Appliance sizing</li><li>UTM and content filtering setup</li><li>License and support renewal</li></ul>
 <p style="margin-top:10px;"><a href="network-security.html">Explore Network &amp; Perimeter Security →</a></p>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="Sophos logo" decoding="async" height="178" loading="lazy" src="images/sophos-logo.png" width="220"/>&gt;</span><div><h3>Sophos</h3><small>Endpoint &amp; Network Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="Sophos logo" decoding="async" height="178" loading="lazy" src="images/sophos-logo.png" width="220"/></span><div><h3>Sophos</h3><small>Endpoint &amp; Network Protection</small></div></div>
 <p>Endpoint protection and firewall appliances managed from a single cloud console.</p>
 <div class="versions"><b>Available solutions</b>Intercept X endpoint, Sophos Firewall, Sophos Central management</div>
 <ul class="product-list"><li>Endpoint and firewall licensing</li><li>Central console setup</li><li>Policy and alert configuration</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="CrowdStrike logo" decoding="async" height="179" loading="lazy" src="images/crowdstrike-logo.png" width="220"/>&gt;</span><div><h3>CrowdStrike</h3><small>Endpoint Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="CrowdStrike logo" decoding="async" height="179" loading="lazy" src="images/crowdstrike-logo.png" width="220"/></span><div><h3>CrowdStrike</h3><small>Endpoint Protection</small></div></div>
 <p>Cloud-delivered endpoint detection and response for advanced threat protection.</p>
 <div class="versions"><b>Available solutions</b>Falcon Prevent, Falcon Insight EDR, Falcon Cloud Security</div>
 <ul class="product-list"><li>Sensor deployment planning</li><li>EDR policy configuration</li><li>Licensing and renewal support</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="Kaspersky logo" decoding="async" height="220" loading="lazy" src="images/kaspersky-logo.png" width="220"/>&gt;</span><div><h3>Kaspersky</h3><small>Endpoint Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="Kaspersky logo" decoding="async" height="220" loading="lazy" src="images/kaspersky-logo.png" width="220"/></span><div><h3>Kaspersky</h3><small>Endpoint Protection</small></div></div>
 <p>Endpoint and server security with centralized management for mixed device environments.</p>
 <div class="versions"><b>Available solutions</b>Endpoint Security for Business, Kaspersky Security Center</div>
 <ul class="product-list"><li>Endpoint licensing</li><li>Policy and update management</li><li>Renewal and compliance support</li></ul>
 </article>
 <article class="product-card">
-<div class="product-head"><span class="product-logo product-logo-img"><img alt="ESET logo" decoding="async" height="220" loading="lazy" src="images/eset-logo.png" width="220"/>&gt;</span><div><h3>ESET</h3><small>Endpoint Protection</small></div></div>
+<div class="product-head"><span class="product-logo product-logo-img"><img alt="ESET logo" decoding="async" height="220" loading="lazy" src="images/eset-logo.png" width="220"/></span><div><h3>ESET</h3><small>Endpoint Protection</small></div></div>
 <p>Lightweight endpoint protection for organizations that need low system impact security.</p>
 <div class="versions"><b>Available solutions</b>ESET PROTECT, endpoint antivirus, server and mail security</div>
 <ul class="product-list"><li>Endpoint licensing</li><li>Console and policy setup</li><li>Renewal support</li></ul>
@@ -261,10 +355,11 @@
 </div>
 </div>
 <aside aria-label="Security contact" class="contact-card">
-<img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo-white.png" width="220"/>&gt;
+<img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo-white-original.png" width="220"/>
 <h3>Speak with Rua Technologies</h3>
-<p>Email or WhatsApp us for a cybersecurity coverage review.</p>
+<p>Email or WhatsApp us with what you're working on — we'll route it to the right specialist and follow up the same business day.</p>
 <a class="btn" href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a>
+<a class="btn" href="tel:+919131571358" style="margin-top:10px;">+91 91315 71358</a>
 <a class="whatsapp-btn" href="https://wa.me/919131571358" rel="noopener noreferrer" style="margin-top:10px;" target="_blank">
 <svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg>
             Chat on WhatsApp
@@ -357,7 +452,7 @@
 <div class="wa-widget" id="waWidget">
 <div aria-label="Chat with Rua Technologies on WhatsApp" class="wa-card" role="dialog">
 <div class="wa-card-head">
-<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="124" loading="lazy" src="images/rua-technologies-icon.png" width="220"/>&gt;</span>
+<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="124" loading="lazy" src="images/rua-technologies-icon.png" width="220"/></span>
 <div>
 <b>Rua Technologies</b>
 <span>Typically replies within an hour</span>

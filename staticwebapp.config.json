@@ -1,4 +1,23 @@
 {
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/images/*",
+      "/img/*",
+      "/css/*",
+      "/js/*",
+      "/assets/*",
+      "/*.css",
+      "/*.js",
+      "/*.png",
+      "/*.jpg",
+      "/*.jpeg",
+      "/*.gif",
+      "/*.svg",
+      "/*.ico",
+      "/*.webp"
+    ]
+  },
   "routes": [
     {
       "route": "/aws",

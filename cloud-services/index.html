@@ -4,23 +4,167 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Page Not Found (404) | Rua Technologies</title>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<meta content="The page you're looking for doesn't exist or has moved. Head back to the Rua Technologies homepage to find Microsoft, cloud, and security services." name="description"/>
-<link href="https://ruatechnologies.com/404.html" rel="canonical"/>
+<title>Cloud Services | Rua Technologies</title>
+<meta content="Cloud migration, architecture, and management across Azure, AWS, and Google Cloud from Rua Technologies. Planning, migration, backup, and ongoing support for businesses across India." name="description"/>
+<link href="https://ruatechnologies.com/cloud-services" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Rua Technologies" property="og:site_name"/>
-<meta content="Page Not Found (404) | Rua Technologies" property="og:title"/>
-<meta content="Rua Technologies delivers Microsoft 365, Azure, Google Workspace, Adobe, cybersecurity, cloud migration, backup, endpoint security and managed IT services for businesses." property="og:description"/>
-<meta content="https://ruatechnologies.com/404.html" property="og:url"/>
+<meta content="Cloud Services | Rua Technologies" property="og:title"/>
+<meta content="Cloud infrastructure, migration, and hybrid setup across Azure, AWS, and Google Cloud, planned and supported end to end by Rua Technologies." property="og:description"/>
+<meta content="https://ruatechnologies.com/cloud-services" property="og:url"/>
 <meta content="https://ruatechnologies.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://ruatechnologies.com/og-image.png" name="twitter:image"/>
-<meta content="Page Not Found | Rua Technologies" name="twitter:title"/>
-<meta content="The page you're looking for couldn't be found. Browse Microsoft 365, Google Workspace, Adobe, Dynamics 365, and cybersecurity solutions from Rua Technologies." name="twitter:description"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Page Not Found","url":"https://ruatechnologies.com/404.html"}</script>
+<meta content="Cloud Services | Rua Technologies" name="twitter:title"/>
+<meta content="Cloud migration, architecture, backup, and ongoing management across Azure, AWS, and Google Cloud." name="twitter:description"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "serviceType": "Cloud infrastructure and migration services", "provider": {"@type": "Organization", "name": "Rua Technologies", "url": "https://ruatechnologies.com/"}, "areaServed": [{"@type": "Country", "name": "India"}, {"@type": "AdministrativeArea", "name": "Madhya Pradesh"}, {"@type": "AdministrativeArea", "name": "National Capital Region"}], "description": "Cloud migration, architecture, backup and disaster recovery, and ongoing management across Azure, AWS, and Google Cloud."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruatechnologies.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://ruatechnologies.com/services"}, {"@type": "ListItem", "position": 3, "name": "Cloud Services", "item": "https://ruatechnologies.com/cloud-services"}]}</script>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<style>
+  /* Cloud services page — hero platform strip, proof stats, lifecycle-phase cards */
+  body.page-cloud #hero { padding: 60px 0 40px; text-align: left; background: radial-gradient(circle at 8% 8%, rgba(14,165,233,0.06), transparent 42%), radial-gradient(circle at 92% 92%, rgba(97,40,242,0.05), transparent 40%), var(--surface); }
+  body.page-cloud .cloud-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr); gap: 44px; align-items: center; }
+  body.page-cloud .cloud-hero-copy .eyebrow { margin-bottom: 12px; }
+  body.page-cloud .cloud-hero-copy h1 { color: var(--navy); font-size: clamp(28px, 3.6vw, 40px); line-height: 1.16; margin-bottom: 16px; }
+  body.page-cloud .cloud-hero-copy p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 12px; max-width: 560px; }
+  body.page-cloud .cloud-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+  body.page-cloud .cloud-hero-actions .btn { flex: 0 0 auto; }
+  body.page-cloud .cloud-hero-jump { display: inline-flex; align-items: center; gap: 6px; color: #0ea5e9; font-size: 13.5px; font-weight: 700; text-decoration: none; }
+  body.page-cloud .cloud-hero-jump svg { width: 14px; height: 14px; transition: transform .15s ease; }
+  body.page-cloud .cloud-hero-jump:hover svg { transform: translateY(2px); }
+
+  body.page-cloud .cloud-hero-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: 0 24px 48px -26px rgba(20,32,51,0.28); }
+  body.page-cloud .cloud-hero-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
+  body.page-cloud .cloud-hero-card-head .cloud-hero-badge { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 12px; background: rgba(14,165,233,0.1); flex: 0 0 auto; color: #0ea5e9; }
+  body.page-cloud .cloud-hero-card-head .cloud-hero-badge svg { width: 30px; height: 30px; }
+  body.page-cloud .cloud-hero-card-head b { display: block; font-size: 14.5px; color: var(--ink); }
+  body.page-cloud .cloud-hero-card-head span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+  body.page-cloud .cloud-hero-stats { list-style: none; margin: 0 0 20px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  body.page-cloud .cloud-hero-stats li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; background: var(--surface); border-radius: 10px; padding: 12px 8px; }
+  body.page-cloud .cloud-hero-stats b { font-size: 17px; color: var(--navy); white-space: nowrap; }
+  body.page-cloud .cloud-hero-stats span { font-size: 11px; color: var(--muted); line-height: 1.3; }
+  body.page-cloud .cloud-hero-legend { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+  body.page-cloud .cloud-hero-legend span { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+  body.page-cloud .cloud-hero-legend span svg { width: 13px; height: 13px; }
+  body.page-cloud .cloud-hero-legend span:nth-child(1) { background: rgba(0,120,212,0.1); color: #0c447c; }
+  body.page-cloud .cloud-hero-legend span:nth-child(2) { background: rgba(255,153,0,0.12); color: #8a5a0f; }
+  body.page-cloud .cloud-hero-legend span:nth-child(3) { background: rgba(66,133,244,0.1); color: #1a4d8f; }
+
+  @media (max-width: 860px) {
+    body.page-cloud .cloud-hero-grid { grid-template-columns: 1fr; }
+  }
+
+  .cloud-platform-row {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .cloud-platform-row .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 99px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ink-2);
+    box-shadow: 0 1px 2px rgba(20,32,51,0.04);
+  }
+  .cloud-platform-row .chip svg { width: 16px; height: 16px; flex: 0 0 auto; }
+  .cloud-platform-row .sep {
+    color: var(--faint);
+    font-size: 13px;
+  }
+  .cloud-platform-row .also {
+    color: var(--faint);
+    font-size: 12.5px;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+
+  #cloud-stats { padding: 34px 0 6px; }
+  .cloud-stats-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(20,32,51,0.03), 0 10px 24px rgba(20,32,51,0.04);
+  }
+  .cloud-stat {
+    padding: 22px 18px;
+    text-align: center;
+    border-right: 1px solid var(--line);
+  }
+  .cloud-stat:last-child { border-right: none; }
+  .cloud-stat b {
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--navy);
+    letter-spacing: -0.01em;
+  }
+  .cloud-stat span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+  }
+
+  /* Lifecycle phase rail on the solutions grid */
+  #overview .solutions { position: relative; }
+  .solution .phase-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 14px;
+    padding: 3px 10px 3px 3px;
+    border-radius: 99px;
+    background: var(--accent-tint);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--accent) 75%, var(--ink));
+  }
+  .solution .phase-tag em {
+    font-style: normal;
+    display: inline-grid;
+    place-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 900px) {
+    .cloud-stats-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cloud-stat:nth-child(2) { border-right: none; }
+    .cloud-stat:nth-child(1), .cloud-stat:nth-child(2) { border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 640px) {
+    .cloud-stats-strip { grid-template-columns: 1fr; }
+    .cloud-stat { border-right: none !important; border-bottom: 1px solid var(--line); }
+    .cloud-stat:last-child { border-bottom: none; }
+  }
+</style>
+<meta content="#0b3d91" name="theme-color"/><link as_="image" href="/images/rua-technologies-logo.webp" rel="preload"/>
 <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABTAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAhpJREFUeJx1k0FPU0EQx3+7b/e99hWsoUgMeICDxAt6MX4JPfAxvHj0a2ii8Wo8cDNqiAcjmCgaE6RoREmMiRjigSItmraUtu+93fGAaSD0TTKX2Z3fTP75j2q320JOOC9opVAq7wfovAcRKJcMJlBI7ogcgAhERrG4Wme/nWCNIo9xCuAEYgOf/3rmH+6y9LxOoWhwbjjiFEAD4oVb2x2YG2fjjYEtQRVh2BonAA4Y1YoFBPdrh5uX+pTjElv3NMYyVIsBQIAQqMWW+M4yq4/ec3vCczUusbzgqb1SRGdAXA5AeUHiiOT+S24sfMKMddEffvN0yVBFWLxr6DUVygwDiIANcPUmY4+rmCtn6U0J46rK9fkn+Nl1Xq9v8vVdm2Ks8ccEVSeMJAJ7TSRLsbEhiDW2lNBLQ7Z/CucmRymUAsQf20BEGCQKuVDhwYsVNuotnr39xsfvjqWVH1ycmyAsalwmiDDoMdYatNYgIAjiPNcuz3J+7AzNxh8q5Yj9vYAsEaIwRGtFljmCIMB7j1qrfpE0SXHiCa3FOU+v16NQKJAkKSMjRWamp1irblKplGk0msxMT1LbbVAuj6CjyJI5jzWGIAhotQ6IopB+v0+n0yXLHDu1OoIAiiRJOegckqTZkYjd7qForRERvBesCUApkKMW7z3Oeaw1iAhaa7IsI9Aa7wXVarVO+EuOBoEwOGOlFPLfhnKsDvAPK3YP4cM1hxYAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -34,12 +178,13 @@
   gtag('js', new Date());
   gtag('config', 'G-KJ2LTMCECV');
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Rua Technologies"}</script><meta content="#0b3d91" name="theme-color"/><link as_="image" href="/images/rua-technologies-logo.webp" rel="preload"/> <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
+<style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which cloud platforms do you support?", "acceptedAnswer": {"@type": "Answer", "text": "Microsoft Azure, AWS, and Google Cloud Platform, alongside Microsoft 365 and Google Workspace for collaboration and email."}}, {"@type": "Question", "name": "Can you migrate us from on-premises servers to the cloud?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We plan the migration, size the target environment, move data and workloads, and validate everything before cutover."}}, {"@type": "Question", "name": "Do you handle backup and disaster recovery?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We set up automated backups, define recovery objectives, and test recovery procedures \u2014 not just configure a backup job."}}, {"@type": "Question", "name": "Can you manage a hybrid environment with both cloud and on-prem systems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We design and support hybrid connectivity between on-prem infrastructure and Azure, AWS, or Google Cloud."}}, {"@type": "Question", "name": "Do you provide ongoing cloud cost optimization?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Monthly usage and cost reviews are part of our ongoing cloud management, so spend doesn't creep up unnoticed."}}]}</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Rua Technologies","url":"https://ruatechnologies.com/"}
 </script>
 </head>
-<body>
+<body class="page-cloud">
 <a class="skip-link" href="#top">Skip to content</a>
 <div class="topbar">
 <div class="wrap">
@@ -77,7 +222,7 @@
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">Services<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="/cloud-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
+<a aria-current="page" href="/cloud-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
 <a href="/managed-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
 <a href="/licensing"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
 <a href="/consulting"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
@@ -137,7 +282,7 @@
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">Services<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="/cloud-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
+<a aria-current="page" href="/cloud-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
 <a href="/managed-services"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
 <a href="/licensing"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
 <a href="/consulting"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
@@ -175,25 +320,156 @@
 </header>
 <main id="top" role="main">
 <section id="hero">
-<div class="wrap" style="text-align:center;max-width:640px;">
+<div class="wrap cloud-hero-grid">
+<div class="cloud-hero-copy">
+<p class="eyebrow">Cloud services</p>
+<h1>Cloud infrastructure, migration, and hybrid setup — planned and supported end to end.</h1>
+<p>Rua Technologies plans, migrates, and manages cloud infrastructure across Microsoft Azure, AWS, and Google Cloud, alongside Microsoft 365 and Google Workspace collaboration platforms.</p>
+<p>From initial architecture through migration, backup, and ongoing optimization, we act as the single accountable partner for your cloud environment — not just a licensing reseller.</p>
+<div class="cloud-hero-actions">
+<a class="btn primary" href="/contact">Talk to our cloud team</a>
+<a class="cloud-hero-jump" href="#overview">See what's included <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
+</div>
+</div>
+<aside aria-label="Rua Technologies cloud services credentials" class="cloud-hero-card">
+<div class="cloud-hero-card-head">
+<div class="cloud-hero-badge"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div>
+<div><b>Multi-cloud specialists</b><span>Azure, AWS &amp; Google Cloud</span></div>
+</div>
+<ul class="cloud-hero-stats">
+<li><b>3</b><span>Cloud platforms</span></li>
+<li><b>2–6 wks</b><span>Typical migration</span></li>
+<li><b>24×7</b><span>Ongoing monitoring</span></li>
+</ul>
+<div class="cloud-hero-legend">
+<span><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0078D4"></path></svg>Azure</span>
+<span><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#FF9900" opacity="0.15"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>AWS</span>
+<span><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle></svg>Google Cloud</span>
+</div>
+</aside>
+</div>
+</section><section class="alt" id="overview">
+<div class="wrap">
 <div class="section-head center">
-<p class="eyebrow">404</p>
-<h1>We couldn't find that page.</h1>
-<p>Rua Technologies delivers enterprise IT solutions including Microsoft 365, Azure, cybersecurity, cloud migration, managed IT services, and digital transformation tailored to modern businesses.</p>
-<p>The page you're looking for may have moved or no longer exists. Here are a few places to start instead:</p>
+<p class="eyebrow">What's included</p>
+<h2>Cloud services built around your environment, not a fixed package.</h2>
 </div>
-<div class="category-tags" style="justify-content:center;">
-<a class="category-tag tag-ms" href="/">Home</a>
-<a class="category-tag tag-ms" href="/microsoft-365">Microsoft 365</a>
-<a class="category-tag tag-google" href="/google-workspace"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="9" cy="7" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6"></path><circle cx="17" cy="7" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4"></path></svg>Google Workspace</a>
-<a class="category-tag tag-adobe" href="/adobe"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z"></path><path d="M9.5 4L4 20"></path><path d="M15 13h-5"></path></svg>Adobe</a>
-<a class="category-tag tag-ms" href="/dynamics-365"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 15l4-6 3 4 5-8"></path></svg>Dynamics 365</a>
-<a class="category-tag tag-security" href="/cybersecurity">Cybersecurity</a>
-<a href="/services">Services</a>
-<a class="category-tag tag-azure" href="/all-products">All products</a>
-<a class="category-tag tag-autodesk" href="/blog">Resources</a>
+<div class="solutions">
+<article class="solution" id="migration">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div>
+<p class="phase-tag"><em>01</em>Move</p>
+<h3>Cloud migration &amp; setup</h3>
+<p>Planned migrations to Azure, AWS, or Google Cloud with minimal disruption to running systems, backed by a tested cutover plan.</p>
+<ul>
+<li>Azure and AWS account and tenant setup</li><li>Workload and server migration planning</li><li>Data transfer and validation</li><li>Hybrid cloud and on-prem connectivity</li><li>Cutover scheduling with rollback plan</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Organizations moving on-prem infrastructure to the cloud, or consolidating multiple cloud accounts.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Most migrations complete in 2–6 weeks depending on workload count and data volume.</p>
+</article>
+<article class="solution">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="6" rx="1.5" width="18" x="3" y="4"></rect><rect height="6" rx="1.5" width="18" x="3" y="14"></rect><path d="M7 7h.01M7 17h.01"></path></svg></div>
+<p class="phase-tag"><em>02</em>Shape</p>
+<h3>Infrastructure &amp; architecture</h3>
+<p>Right-sized cloud architecture that balances performance, cost, and manageability for your workloads.</p>
+<ul>
+<li>Compute, storage, and network sizing</li><li>Cost estimation and optimization review</li><li>Azure/AWS landing zone setup</li><li>Identity and access configuration</li><li>Monitoring and alerting setup</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Teams that need cloud infrastructure designed correctly the first time, not retrofitted later.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Architecture design typically takes 1–3 weeks before deployment begins.</p>
+</article>
+<article class="solution">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"></path></svg></div>
+<p class="phase-tag"><em>03</em>Protect</p>
+<h3>Backup &amp; disaster recovery</h3>
+<p>Automated backup and recovery planning so a lost server, deleted mailbox, or failed migration doesn't become a lost week.</p>
+<ul>
+<li>Cloud-to-cloud and on-prem backup</li><li>Recovery point/time objective planning</li><li>Disaster recovery runbooks</li><li>Periodic recovery testing</li><li>Retention and compliance alignment</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Businesses that need a tested recovery plan, not just a backup job that's never been restored from.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Backup and DR setup typically takes 1–2 weeks to configure and validate.</p>
+</article>
+<article class="solution">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg></div>
+<p class="phase-tag"><em>04</em>Sustain</p>
+<h3>Ongoing cloud management</h3>
+<p>Continuous monitoring, patching, and cost review so your cloud spend and security posture don't drift over time.</p>
+<ul>
+<li>Monthly cost and usage review</li><li>Patch and update management</li><li>Performance monitoring</li><li>Security configuration review</li><li>Scaling recommendations as you grow</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Organizations without in-house cloud engineers who still need proactive oversight.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Ongoing management begins immediately after migration and continues monthly.</p>
+</article>
+<article class="solution">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+<p class="phase-tag"><em>05</em>Secure</p>
+<h3>Cloud security &amp; compliance</h3>
+<p>Identity, encryption, and compliance controls layered onto your cloud environment so security keeps pace with growth instead of trailing behind it.</p>
+<ul>
+<li>Cloud security posture assessment</li><li>Identity and access hardening (Entra ID/IAM)</li><li>Encryption at rest and in transit</li><li>Compliance mapping (ISO 27001, SOC 2, DPDP)</li><li>Continuous security configuration review</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Organizations that need cloud security tightened before or after migration, not bolted on as an afterthought.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Security assessment and hardening typically takes 2–4 weeks depending on environment size.</p>
+</article>
+<article class="solution">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="12" r="3"></circle><path d="M9 12h6"></path></svg></div>
+<p class="phase-tag"><em>06</em>Scale</p>
+<h3>Hybrid &amp; multi-cloud connectivity</h3>
+<p>Secure connectivity between on-premises systems and multiple cloud platforms, so workloads run wherever they make the most sense.</p>
+<ul>
+<li>Site-to-site VPN and ExpressRoute/Direct Connect setup</li><li>Cross-cloud identity federation</li><li>Workload placement strategy</li><li>Network segmentation and firewalling</li><li>Unified monitoring across environments</li>
+</ul>
+<p class="solution-fit"><b>Best for:</b> Businesses running workloads across more than one cloud, or keeping some systems on-premises by choice or regulation.</p>
+<p class="solution-timeline"><b>Typical timeline:</b> Hybrid connectivity setup typically takes 2–5 weeks depending on network complexity.</p>
+</article>
 </div>
-<div style="margin-top:32px;"><a class="btn primary" href="/contact">Contact us instead</a></div>
+</div>
+</section>
+<section class="alt" id="related">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">Related services</p>
+<h2>Often paired with cloud services.</h2>
+</div>
+<div class="catalogue-grid">
+<a class="catalogue-card" href="/managed-services"><b>Managed IT Services</b><span>24×7 monitoring and support for your full environment, cloud included.</span><i>Explore Managed Services →</i></a><a class="catalogue-card" href="/microsoft-365"><b>Microsoft 365</b><span>Email, Teams, and SharePoint migration alongside your cloud infrastructure.</span><i>Explore Microsoft 365 →</i></a><a class="catalogue-card" href="/azure"><b>Azure</b><span>Dedicated Azure licensing, architecture, and support.</span><i>Explore Azure →</i></a>
+</div>
+</div>
+</section><section class="alt" id="faq">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">FAQ</p>
+<h2>Common questions about our cloud services.</h2>
+</div>
+<div class="faq-list">
+<details class="faq-item" open="" style="--faq-color:#087fc3;--faq-tint:#edf8ff"><summary><span class="faq-q">Q</span>Which cloud platforms do you support?</summary><p>Microsoft Azure, AWS, and Google Cloud Platform, alongside Microsoft 365 and Google Workspace for collaboration and email.</p></details><details class="faq-item" style="--faq-color:#6128f2;--faq-tint:#f3efff"><summary><span class="faq-q">Q</span>Can you migrate us from on-premises servers to the cloud?</summary><p>Yes. We plan the migration, size the target environment, move data and workloads, and validate everything before cutover.</p></details><details class="faq-item" style="--faq-color:#07876c;--faq-tint:#ebfaf5"><summary><span class="faq-q">Q</span>Do you handle backup and disaster recovery?</summary><p>Yes. We set up automated backups, define recovery objectives, and test recovery procedures — not just configure a backup job.</p></details><details class="faq-item" style="--faq-color:#b77816;--faq-tint:#fff7e7"><summary><span class="faq-q">Q</span>Can you manage a hybrid environment with both cloud and on-prem systems?</summary><p>Yes. We design and support hybrid connectivity between on-prem infrastructure and Azure, AWS, or Google Cloud.</p></details><details class="faq-item" style="--faq-color:#d93876;--faq-tint:#fff0f6"><summary><span class="faq-q">Q</span>Do you provide ongoing cloud cost optimization?</summary><p>Yes. Monthly usage and cost reviews are part of our ongoing cloud management, so spend doesn't creep up unnoticed.</p></details>
+</div>
+</div>
+</section><section class="contact" id="cloud-cta">
+<div class="wrap contact-grid">
+<div>
+<div class="section-head">
+<p class="eyebrow">Get in touch</p>
+<h2>Planning a cloud migration or setup?</h2>
+<p>Tell us what you're running today and where you want to end up — we'll map out a practical migration path.</p>
+</div>
+<div class="contact-lines">
+<div class="contact-line"><strong>Email</strong><span><a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a></span></div>
+<div class="contact-line"><strong>WhatsApp</strong><span><a class="whatsapp-inline" href="https://wa.me/919131571358" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg>Chat with us</a></span></div>
+<div class="contact-line"><strong>Scope</strong><span>Any of our 18 service areas — cloud, security, AI, licensing, and support</span></div>
+<div class="contact-line"><strong>Response</strong><span>A practical next step, recommended within one business day</span></div>
+</div>
+</div>
+<aside aria-label="Contact" class="contact-card">
+<img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="/images/rua-technologies-logo-white-original.webp" width="220"/>
+<h3>Speak with Rua Technologies</h3>
+<p>Email or WhatsApp us with what you're working on — we'll route it to the right specialist and follow up the same business day.</p>
+<a class="btn" href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a>
+<a class="btn" href="tel:+919131571358" style="margin-top:10px;">+91 91315 71358</a>
+<a class="whatsapp-btn" href="https://wa.me/919131571358" rel="noopener noreferrer" style="margin-top:10px;" target="_blank">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg>
+            Chat on WhatsApp
+          </a>
+</aside>
 </div>
 </section>
 </main>
@@ -315,6 +591,5 @@
     });
   })();
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "/"}, {"@type": "ListItem", "position": 2, "name": "404", "item": "404.html"}]}</script>
 </body>
 </html>

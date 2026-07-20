@@ -5,13 +5,13 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Us | Microsoft, Cloud &amp; Security Support | Rua Technologies</title>
-<meta content="Contact Rua Technologies for Microsoft, Adobe, Google, and AWS licensing, cloud, and cybersecurity support. Bhopal-headquartered, serving Central India, Delhi NCR, and pan-India." name="description"/>
-<link href="https://ruatechnologies.com/contact.html" rel="canonical"/>
+<meta content="Contact Rua Technologies for Microsoft, Adobe, Google, and AWS licensing, cloud, and cybersecurity support across Central India, Delhi NCR, and pan-India." name="description"/>
+<link href="https://ruatechnologies.com/contact" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Rua Technologies" property="og:site_name"/>
 <meta content="Contact Rua Technologies | Rua Technologies" property="og:title"/>
 <meta content="Contact Rua Technologies for Microsoft, Adobe, Google, and AWS licensing, cloud, and cybersecurity support. Bhopal-headquartered, serving Central India, Delhi NCR, and pan-India." property="og:description"/>
-<meta content="https://ruatechnologies.com/contact.html" property="og:url"/>
+<meta content="https://ruatechnologies.com/contact" property="og:url"/>
 <meta content="https://ruatechnologies.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
@@ -20,12 +20,12 @@
 <meta content="Contact Rua Technologies | Rua Technologies" name="twitter:title"/>
 <meta content="Contact Rua Technologies for Microsoft, Adobe, Google, and AWS licensing, cloud, and cybersecurity support. Bhopal-headquartered, serving Central India, Delhi NCR, and pan-India." name="twitter:description"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Rua Technologies", "url": "https://ruatechnologies.com/", "email": "sales@ruatechnologies.com", "telephone": "+91-9131571358", "address": {"@type": "PostalAddress", "streetAddress": "Rajats Golden Nest, Katara Hills", "addressLocality": "Bhopal", "postalCode": "462043", "addressRegion": "Madhya Pradesh", "addressCountry": "IN"}, "areaServed": [{"@type": "AdministrativeArea", "name": "Madhya Pradesh"}, {"@type": "AdministrativeArea", "name": "Chhattisgarh"}, {"@type": "AdministrativeArea", "name": "National Capital Region"}, {"@type": "Country", "name": "India"}], "sameAs": []}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruatechnologies.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://ruatechnologies.com/contact.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruatechnologies.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://ruatechnologies.com/contact"}]}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <style>
   /* Compact layout tuning — contact page only */
   #top section { padding: 52px 0; }
-  #hero { padding: 44px 0 34px; }
+  #top section#hero { padding: 0; }
   #top .section-head { margin-bottom: 22px; }
   #top .section-head.center { margin-bottom: 26px; }
   #top h2 { margin-bottom: 8px; font-size: clamp(26px, 3.2vw, 34px); }
@@ -48,9 +48,55 @@
   #faq .faq-item { padding: 2px 18px; }
   #faq .faq-item summary { padding: 13px 0; }
   #faq .faq-item p { margin-bottom: 13px; }
+
+  /* Enterprise split hero */
+  #top section#hero {
+    text-align: left;
+    background:
+      radial-gradient(circle at 84% 8%, rgba(255,22,120,0.10), transparent 32%),
+      radial-gradient(circle at 12% 88%, rgba(34,215,245,0.12), transparent 34%),
+      var(--surface);
+    border-bottom: 1px solid var(--line);
+  }
+  .contact-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0,1.1fr) minmax(300px,0.9fr);
+    gap: 44px;
+    align-items: center;
+    padding: 52px 0 44px;
+  }
+  .contact-hero-copy .eyebrow { color: var(--blue); margin-bottom: 12px; }
+  .contact-hero-copy h1 { color: var(--navy); font-size: clamp(30px, 3.6vw, 44px); line-height: 1.12; margin-bottom: 14px; }
+  .contact-hero-copy > p { color: var(--muted); font-size: 15.5px; line-height: 1.65; max-width: 520px; margin-bottom: 20px; }
+  .contact-hero-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .contact-hero-badges span { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 700; color: var(--navy); background: #fff; border: 1px solid var(--line); padding: 7px 13px; border-radius: 20px; }
+  .contact-hero-badges svg { width: 13px; height: 13px; color: var(--blue); flex-shrink: 0; }
+
+  .contact-hero-card { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: var(--shadow); }
+  .contact-hero-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .contact-hero-badge { width: 48px; height: 48px; border-radius: 10px; background: rgba(10,168,255,0.08); display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+  .contact-hero-badge img { width: 32px; height: 32px; object-fit: contain; }
+  .contact-hero-card-head b { display: block; font-size: 14.5px; color: var(--ink); }
+  .contact-hero-card-head span { display: block; font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+  .contact-hero-stats { list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
+  .contact-hero-stats li { background: var(--surface); border-radius: 10px; padding: 10px 6px; text-align: center; }
+  .contact-hero-stats b { display: block; font-size: 14px; color: var(--navy); white-space: nowrap; }
+  .contact-hero-stats span { font-size: 9.5px; color: var(--muted); line-height: 1.3; }
+  .contact-hero-links { display: flex; flex-direction: column; gap: 8px; }
+  .contact-hero-link { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; transition: border-color .15s ease, background .15s ease; }
+  .contact-hero-link:hover { border-color: var(--blue); background: var(--surface); }
+  .contact-hero-link svg { width: 18px; height: 18px; color: var(--blue); flex-shrink: 0; }
+  .contact-hero-link b { display: block; font-size: 13px; color: var(--ink); font-weight: 700; }
+  .contact-hero-link small { display: block; font-size: 10.5px; color: var(--muted); font-weight: 500; }
+
+  #top .hp-trustbar { padding: 30px 0; }
+  #top .hp-stats-band { padding: 28px 0; }
+
+  @media (max-width: 860px) {
+    .contact-hero-grid { grid-template-columns: 1fr; padding: 40px 0 32px; gap: 26px; }
+  }
   @media (max-width: 640px) {
     #top section { padding: 36px 0; }
-    #hero { padding: 36px 0 26px; }
   }
 </style>
 <meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/>
@@ -69,9 +115,9 @@
 </script>
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's the fastest way to reach you?", "acceptedAnswer": {"@type": "Answer", "text": "WhatsApp or email both reach the same team the same business day - use whichever is more convenient for you."}}, {"@type": "Question", "name": "What are your support hours?", "acceptedAnswer": {"@type": "Answer", "text": "Monday to Saturday, 9:30 AM to 6:30 PM IST. Messages sent outside these hours are picked up the next business day."}}, {"@type": "Question", "name": "Do you visit client offices, or is everything remote?", "acceptedAnswer": {"@type": "Answer", "text": "We have on-ground presence in Bhopal and Delhi NCR for site visits and hands-on work, and provide the same standard of remote support to clients anywhere else in India."}}, {"@type": "Question", "name": "What should I include when reaching out for a quote?", "acceptedAnswer": {"@type": "Answer", "text": "A rough idea of user or device count, which platforms or vendors you're using or considering, and your timeline - we'll follow up with specific questions if needed."}}, {"@type": "Question", "name": "Can I speak to someone about an existing account or renewal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Email or WhatsApp us with your company name and we'll connect you with the team handling your account."}}]}</script>
-<meta content="Discover Contact Rua Technologies. Rua Technologies delivers Microsoft, Azure, AWS, cybersecurity, cloud, and managed IT solutions." name="description"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Rua Technologies", "url": "https://www.ruatechnologies.com", "email": "sales@ruatechnologies.com", "sameAs": ["https://www.linkedin.com/company/rua-technologies/about/"]}</script><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Rua Technologies","url":"https://www.ruatechnologies.com/"}
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Rua Technologies", "url": "https://ruatechnologies.com", "email": "sales@ruatechnologies.com", "sameAs": ["https://www.linkedin.com/company/rua-technologies/about/"]}</script><script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Rua Technologies","url":"https://ruatechnologies.com/"}
 </script>
 </head>
 <body>
@@ -88,59 +134,63 @@
 </div>
 <header>
 <div class="wrap nav">
-<a aria-label="Rua Technologies home" class="brand" href="index.html">
+<a aria-label="Rua Technologies home" class="brand" href="/">
 <img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>
 <span>Rua Technologies<small>Enterprise IT Partner</small></span>
 </a>
 <nav aria-label="Primary navigation" role="navigation">
-<a href="index.html">Home</a>
+<a href="/">Home</a>
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">Products<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="microsoft-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#7FBA00" height="8" width="8" x="13" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="3" y="13"></rect><rect fill="#FFB900" height="8" width="8" x="13" y="13"></rect></svg>Microsoft</a>
-<a href="azure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0078D4"></path></svg>Azure</a>
-<a href="aws.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#FF9900" opacity="0.15"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>AWS</a>
-<a href="google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
-<a href="adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
-<a href="dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
-<a href="all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
+<a href="/microsoft-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#7FBA00" height="8" width="8" x="13" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="3" y="13"></rect><rect fill="#FFB900" height="8" width="8" x="13" y="13"></rect></svg>Microsoft</a>
+<a href="/azure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0078D4"></path></svg>Azure</a>
+<a href="/aws.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#FF9900" opacity="0.15"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>AWS</a>
+<a href="/google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
+<a href="/adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
+<a href="/dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
+<a href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
+<a href="/zoho.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#E42527" height="18" rx="3" width="18" x="3" y="3"></rect><path d="M8 15l4-8 4 8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>Zoho</a>
+<a href="/microsoft-infrastructure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="13" y="13"></rect><path d="M3 13h8v8H3zM13 3h8v8h-8z" fill="none" stroke="#7FBA00" stroke-width="1.6"></path></svg>Windows &amp; SQL Server</a>
+<a href="/all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
 </div>
 </div>
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">Services<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="cloud-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
-<a href="managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
-<a href="licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
-<a href="consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
-<a href="support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
+<a href="/cloud-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
+<a href="/managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
+<a href="/licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
+<a href="/consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
+<a href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
 </div>
 </div>
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">Security<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="microsoft-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#0078D4" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12l2 2 4-4" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Microsoft Security</a>
-<a href="endpoint-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#14B8A6" height="12" opacity="0.15" rx="1.5" width="18" x="3" y="4"></rect><rect fill="none" height="12" rx="1.5" stroke="#14B8A6" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-width="1.8"></path></svg>Endpoint Security</a>
-<a href="email-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#6366F1" height="14" opacity="0.15" rx="2" width="18" x="3" y="5"></rect><rect fill="none" height="14" rx="2" stroke="#6366F1" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Email Security</a>
-<a href="dlp.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#DC2626" height="10" opacity="0.15" rx="2" width="16" x="4" y="10"></rect><rect fill="none" height="10" rx="2" stroke="#DC2626" stroke-width="1.8" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#DC2626" stroke-linecap="round" stroke-width="1.8"></path></svg>Data Loss Prevention (DLP)</a>
-<a aria-current="page" href="cybersecurity.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#1E3A8A" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Security Solutions</a>
+<a href="/microsoft-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#0078D4" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12l2 2 4-4" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Microsoft Security</a>
+<a href="/endpoint-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#14B8A6" height="12" opacity="0.15" rx="1.5" width="18" x="3" y="4"></rect><rect fill="none" height="12" rx="1.5" stroke="#14B8A6" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-width="1.8"></path></svg>Endpoint Security</a>
+<a href="/email-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#6366F1" height="14" opacity="0.15" rx="2" width="18" x="3" y="5"></rect><rect fill="none" height="14" rx="2" stroke="#6366F1" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Email Security</a>
+<a href="/dlp.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#DC2626" height="10" opacity="0.15" rx="2" width="16" x="4" y="10"></rect><rect fill="none" height="10" rx="2" stroke="#DC2626" stroke-width="1.8" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#DC2626" stroke-linecap="round" stroke-width="1.8"></path></svg>Data Loss Prevention (DLP)</a>
+<a href="/trend-micro.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#D71921" height="16" rx="2" width="16" x="4" y="4"></rect><path d="M8 12l2.5 2.5L16 9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Trend Micro</a>
+<a aria-current="page" href="/cybersecurity.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#1E3A8A" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Security Solutions</a>
 </div>
 </div>
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">Resources<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="blog.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Blog</a>
-<a href="case-studies.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#0D9488" height="13" opacity="0.15" rx="2" width="18" x="3" y="7"></rect><rect fill="none" height="13" rx="2" stroke="#0D9488" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none" stroke="#0D9488" stroke-linecap="round" stroke-width="1.8"></path></svg>Case Studies</a>
+<a href="/blog.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Blog</a>
+<a href="/case-studies.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#0D9488" height="13" opacity="0.15" rx="2" width="18" x="3" y="7"></rect><rect fill="none" height="13" rx="2" stroke="#0D9488" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none" stroke="#0D9488" stroke-linecap="round" stroke-width="1.8"></path></svg>Case Studies</a>
 </div>
 </div>
 <div class="nav-item">
 <button aria-expanded="false" aria-haspopup="true" class="dropdown-trigger">About Us<span aria-hidden="true" class="dropdown-caret"></span></button>
 <div class="dropdown-panel">
-<a href="about.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="18" opacity="0.15" rx="1.5" width="16" x="4" y="3"></rect><rect fill="none" height="18" rx="1.5" stroke="#4F46E5" stroke-width="1.8" width="16" x="4" y="3"></rect><path d="M9 8h6M9 12h6M9 16h4" fill="none" stroke="#4F46E5" stroke-linecap="round" stroke-width="1.8"></path></svg>About Rua Technologies</a>
-<a href="partners.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="8" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="8" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><circle cx="16" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="16" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path><path d="M10.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path></svg>Partners</a>
+<a href="/about.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="18" opacity="0.15" rx="1.5" width="16" x="4" y="3"></rect><rect fill="none" height="18" rx="1.5" stroke="#4F46E5" stroke-width="1.8" width="16" x="4" y="3"></rect><path d="M9 8h6M9 12h6M9 16h4" fill="none" stroke="#4F46E5" stroke-linecap="round" stroke-width="1.8"></path></svg>About Rua Technologies</a>
+<a href="/partners.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="8" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="8" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><circle cx="16" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="16" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path><path d="M10.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path></svg>Partners</a>
 </div>
 </div>
-<a aria-current="page" href="contact.html">Contact</a>
+<a aria-current="page" href="/contact.html">Contact</a>
 </nav>
 <button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle" type="button">
 <svg class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
@@ -149,67 +199,115 @@
 </div>
 <div class="mobile-nav" id="mobileNav">
 <div class="wrap">
-<a href="index.html">Home</a>
+<a href="/">Home</a>
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">Products<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="microsoft-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#7FBA00" height="8" width="8" x="13" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="3" y="13"></rect><rect fill="#FFB900" height="8" width="8" x="13" y="13"></rect></svg>Microsoft</a>
-<a href="azure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0078D4"></path></svg>Azure</a>
-<a href="aws.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#FF9900" opacity="0.15"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>AWS</a>
-<a href="google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
-<a href="adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
-<a href="dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
-<a href="all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
+<a href="/microsoft-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#7FBA00" height="8" width="8" x="13" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="3" y="13"></rect><rect fill="#FFB900" height="8" width="8" x="13" y="13"></rect></svg>Microsoft</a>
+<a href="/azure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0078D4"></path></svg>Azure</a>
+<a href="/aws.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="#FF9900" opacity="0.15"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" fill="none" stroke="#FF9900" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>AWS</a>
+<a href="/google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
+<a href="/adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
+<a href="/dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
+<a href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
+<a href="/zoho.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#E42527" height="18" rx="3" width="18" x="3" y="3"></rect><path d="M8 15l4-8 4 8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>Zoho</a>
+<a href="/microsoft-infrastructure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="13" y="13"></rect><path d="M3 13h8v8H3zM13 3h8v8h-8z" fill="none" stroke="#7FBA00" stroke-width="1.6"></path></svg>Windows &amp; SQL Server</a>
+<a href="/all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
 </div>
 </div>
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">Services<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="cloud-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
-<a href="managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
-<a href="licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
-<a href="consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
-<a href="support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
+<a href="/cloud-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="#0EA5E9" opacity="0.18"></path><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z" fill="none" stroke="#0EA5E9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Cloud Services</a>
+<a href="/managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
+<a href="/licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
+<a href="/consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
+<a href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
 </div>
 </div>
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">Security<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="microsoft-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#0078D4" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12l2 2 4-4" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Microsoft Security</a>
-<a href="endpoint-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#14B8A6" height="12" opacity="0.15" rx="1.5" width="18" x="3" y="4"></rect><rect fill="none" height="12" rx="1.5" stroke="#14B8A6" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-width="1.8"></path></svg>Endpoint Security</a>
-<a href="email-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#6366F1" height="14" opacity="0.15" rx="2" width="18" x="3" y="5"></rect><rect fill="none" height="14" rx="2" stroke="#6366F1" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Email Security</a>
-<a href="dlp.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#DC2626" height="10" opacity="0.15" rx="2" width="16" x="4" y="10"></rect><rect fill="none" height="10" rx="2" stroke="#DC2626" stroke-width="1.8" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#DC2626" stroke-linecap="round" stroke-width="1.8"></path></svg>Data Loss Prevention (DLP)</a>
-<a aria-current="page" href="cybersecurity.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#1E3A8A" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Security Solutions</a>
+<a href="/microsoft-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#0078D4" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M9 12l2 2 4-4" fill="none" stroke="#0078D4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Microsoft Security</a>
+<a href="/endpoint-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#14B8A6" height="12" opacity="0.15" rx="1.5" width="18" x="3" y="4"></rect><rect fill="none" height="12" rx="1.5" stroke="#14B8A6" stroke-width="1.8" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4" fill="none" stroke="#14B8A6" stroke-linecap="round" stroke-width="1.8"></path></svg>Endpoint Security</a>
+<a href="/email-security.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#6366F1" height="14" opacity="0.15" rx="2" width="18" x="3" y="5"></rect><rect fill="none" height="14" rx="2" stroke="#6366F1" stroke-width="1.8" width="18" x="3" y="5"></rect><path d="M3 7l9 6 9-6" fill="none" stroke="#6366F1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Email Security</a>
+<a href="/dlp.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#DC2626" height="10" opacity="0.15" rx="2" width="16" x="4" y="10"></rect><rect fill="none" height="10" rx="2" stroke="#DC2626" stroke-width="1.8" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#DC2626" stroke-linecap="round" stroke-width="1.8"></path></svg>Data Loss Prevention (DLP)</a>
+<a href="/trend-micro.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#D71921" height="16" rx="2" width="16" x="4" y="4"></rect><path d="M8 12l2.5 2.5L16 9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Trend Micro</a>
+<a aria-current="page" href="/cybersecurity.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="#1E3A8A" opacity="0.15"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" fill="none" stroke="#1E3A8A" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Security Solutions</a>
 </div>
 </div>
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">Resources<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="blog.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Blog</a>
-<a href="case-studies.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#0D9488" height="13" opacity="0.15" rx="2" width="18" x="3" y="7"></rect><rect fill="none" height="13" rx="2" stroke="#0D9488" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none" stroke="#0D9488" stroke-linecap="round" stroke-width="1.8"></path></svg>Case Studies</a>
+<a href="/blog.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Blog</a>
+<a href="/case-studies.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#0D9488" height="13" opacity="0.15" rx="2" width="18" x="3" y="7"></rect><rect fill="none" height="13" rx="2" stroke="#0D9488" stroke-width="1.8" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" fill="none" stroke="#0D9488" stroke-linecap="round" stroke-width="1.8"></path></svg>Case Studies</a>
 </div>
 </div>
 <div class="nav-group">
 <button aria-expanded="false" class="nav-group-toggle">About Us<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9l6 6 6-6"></path></svg></button>
 <div class="nav-group-panel">
-<a href="about.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="18" opacity="0.15" rx="1.5" width="16" x="4" y="3"></rect><rect fill="none" height="18" rx="1.5" stroke="#4F46E5" stroke-width="1.8" width="16" x="4" y="3"></rect><path d="M9 8h6M9 12h6M9 16h4" fill="none" stroke="#4F46E5" stroke-linecap="round" stroke-width="1.8"></path></svg>About Rua Technologies</a>
-<a href="partners.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="8" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="8" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><circle cx="16" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="16" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path><path d="M10.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path></svg>Partners</a>
+<a href="/about.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="18" opacity="0.15" rx="1.5" width="16" x="4" y="3"></rect><rect fill="none" height="18" rx="1.5" stroke="#4F46E5" stroke-width="1.8" width="16" x="4" y="3"></rect><path d="M9 8h6M9 12h6M9 16h4" fill="none" stroke="#4F46E5" stroke-linecap="round" stroke-width="1.8"></path></svg>About Rua Technologies</a>
+<a href="/partners.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="8" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="8" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><circle cx="16" cy="8" fill="#EC4899" opacity="0.2" r="3.2"></circle><circle cx="16" cy="8" fill="none" r="3.2" stroke="#EC4899" stroke-width="1.8"></circle><path d="M2.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path><path d="M10.5 20c0-3.3 2.5-5.5 5.5-5.5s5.5 2.2 5.5 5.5" fill="none" stroke="#EC4899" stroke-linecap="round" stroke-width="1.8"></path></svg>Partners</a>
 </div>
 </div>
-<a aria-current="page" href="contact.html">Contact</a>
+<a aria-current="page" href="/contact.html">Contact</a>
 </div>
 </div>
 </header>
 <main id="top" role="main">
 <section id="hero">
-<div class="wrap">
-<div class="section-head">
+<div class="wrap contact-hero-grid">
+<div class="contact-hero-copy">
 <p class="eyebrow">Contact</p>
-<h1>Talk to Rua Technologies.</h1>
-<p>Whether you're licensing new software, planning a migration, reviewing security coverage, or managing a renewal, reach out and we'll route it to the right person — usually with a response the same business day.</p>
+<h1>Let's talk about your IT roadmap.</h1>
+<p>Whether you're licensing new software, planning a migration, reviewing security coverage, or managing a renewal — reach out and we'll route it to the right person, usually with a response the same business day.</p>
+<div class="contact-hero-badges">
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="9"></circle></svg>Official partner of Microsoft, Adobe, Google &amp; AWS</span>
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg>Same business day response</span>
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>On-ground in Bhopal &amp; Delhi NCR</span>
+</div>
+</div>
+<aside aria-label="Reach Rua Technologies" class="contact-hero-card">
+<div class="contact-hero-card-head">
+<div class="contact-hero-badge"><img alt="Rua Technologies" decoding="async" loading="lazy" src="images/rua-technologies-icon.png"/></div>
+<div><b>Rua Technologies</b><span>Enterprise IT Partner</span></div>
+</div>
+<ul class="contact-hero-stats">
+<li><b>Same day</b><span>Response time</span></li>
+<li><b>Mon–Sat</b><span>9:30AM–6:30PM IST</span></li>
+<li><b>Pan-India</b><span>Coverage</span></li>
+</ul>
+<div class="contact-hero-links">
+<a class="contact-hero-link" href="tel:+919131571358"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span><b>+91 91315 71358</b><small>Call sales</small></span></a>
+<a class="contact-hero-link" href="mailto:sales@ruatechnologies.com"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-10 5L2 7"></path></svg><span><b>sales@ruatechnologies.com</b><small>Email us</small></span></a>
+<a class="contact-hero-link" href="https://wa.me/919131571358" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg><span><b>WhatsApp</b><small>Chat with our team</small></span></a>
+</div>
+</aside>
+</div>
+</section>
+<section class="hp-trustbar">
+<div class="wrap">
+<div class="hp-trustbar-text">
+<p class="eyebrow">Trusted by leading technology partners</p>
+<span>We're proud to be an official partner of leading global technology providers.</span>
+</div>
+<div class="hp-trustbar-logos">
+<span class="hp-trustbar-logo"><img alt="Microsoft" decoding="async" loading="lazy" src="images/microsoft-logo.png"/><span><b>Microsoft</b><span>Solutions Partner</span></span></span>
+<span class="hp-trustbar-logo"><img alt="Google" decoding="async" loading="lazy" src="images/google-logo.png"/><span><b>Google</b><span>Workspace Partner</span></span></span>
+<span class="hp-trustbar-logo"><img alt="Adobe" decoding="async" loading="lazy" src="images/adobe-logo.png"/><span><b>Adobe</b><span>Solution Partner</span></span></span>
+<span class="hp-trustbar-logo"><img alt="AWS Partner Network" decoding="async" loading="lazy" src="images/aws-partner-network.png" style="height:34px;"/></span>
+<span class="hp-trustbar-logo"><img alt="Trend Micro" decoding="async" loading="lazy" src="images/trend-micro-logo.png"/><span><b>Trend Micro</b><span>Partner</span></span></span>
 </div>
 </div>
 </section>
+<div aria-label="Rua Technologies by the numbers" class="hp-stats-band">
+<div class="wrap">
+<div class="stat"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17.5" cy="8" r="2.3"></circle><path d="M15.3 14.2c2.3.6 3.9 2.7 3.9 5.8"></path></svg><span><b>100+</b><span>Happy Clients</span></span></div>
+<div class="stat"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg><span><b>7</b><span>Technology Partners</span></span></div>
+<div class="stat"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></svg><span><b>Same day</b><span>Response Time</span></span></div>
+<div class="stat"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg><span><b>6</b><span>Regions Covered</span></span></div>
+</div>
+</div>
 <section class="alt" id="reasons">
 <div class="wrap">
 <div class="section-head center">
@@ -332,7 +430,7 @@
 <div><strong>Rua Technologies</strong> | Official partner: Microsoft, Adobe, Autodesk, Google, AWS, Trend Micro &amp; Seqrite | <a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a> | <a href="https://wa.me/919131571358" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;" target="_blank"><svg aria-hidden="true" fill="currentColor" height="14" viewbox="0 0 24 24" width="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg>WhatsApp</a></div>
 <div>Rajats Golden Nest, Katara Hills, Bhopal–462043, Madhya Pradesh · GSTIN: 23FWTPK1585C1ZC</div>
 <div>Microsoft, Adobe, Autodesk, Google, AWS, Azure, Zoho, Trend Micro, and Seqrite names, logos, and trademarks belong to their respective owners; use here reflects Rua Technologies' authorized partner status with each company.</div>
-<div><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
+<div><a href="/privacy-policy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a></div>
 </div>
 </footer>
 <script>

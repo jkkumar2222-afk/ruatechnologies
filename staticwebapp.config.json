@@ -1,234 +1,176 @@
 {
   "routes": [
     {
-      "route": "/about.html",
-      "redirect": "/about",
-      "statusCode": 301
+      "route": "/aws",
+      "rewrite": "/aws.html"
     },
     {
-      "route": "/adobe.html",
-      "redirect": "/adobe",
-      "statusCode": 301
+      "route": "/blog",
+      "rewrite": "/blog.html"
     },
     {
-      "route": "/ai-security-business-guide.html",
-      "redirect": "/ai-security-business-guide",
-      "statusCode": 301
+      "route": "/endpoint-security",
+      "rewrite": "/endpoint-security.html"
     },
     {
-      "route": "/all-products.html",
-      "redirect": "/all-products",
-      "statusCode": 301
+      "route": "/licensing",
+      "rewrite": "/licensing.html"
     },
     {
-      "route": "/aws.html",
-      "redirect": "/aws",
-      "statusCode": 301
+      "route": "/microsoft-365-vs-google-workspace",
+      "rewrite": "/microsoft-365-vs-google-workspace.html"
     },
     {
-      "route": "/azure.html",
-      "redirect": "/azure",
-      "statusCode": 301
+      "route": "/top-cybersecurity-threats-2026",
+      "rewrite": "/top-cybersecurity-threats-2026.html"
     },
     {
-      "route": "/azure-vs-aws-2026.html",
-      "redirect": "/azure-vs-aws-2026",
-      "statusCode": 301
+      "route": "/about",
+      "rewrite": "/about.html"
     },
     {
-      "route": "/blog.html",
-      "redirect": "/blog",
-      "statusCode": 301
+      "route": "/contact",
+      "rewrite": "/contact.html"
     },
     {
-      "route": "/business-email-compromise-ransomware-protection-2026.html",
-      "redirect": "/business-email-compromise-ransomware-protection-2026",
-      "statusCode": 301
+      "route": "/microsoft-365-copilot-complete-guide-2026",
+      "rewrite": "/microsoft-365-copilot-complete-guide-2026.html"
     },
     {
-      "route": "/case-studies.html",
-      "redirect": "/case-studies",
-      "statusCode": 301
+      "route": "/ai-security-business-guide",
+      "rewrite": "/ai-security-business-guide.html"
     },
     {
-      "route": "/cloud-services.html",
-      "redirect": "/cloud-services",
-      "statusCode": 301
+      "route": "/microsoft-entra-id-guide",
+      "rewrite": "/microsoft-entra-id-guide.html"
     },
     {
-      "route": "/consulting.html",
-      "redirect": "/consulting",
-      "statusCode": 301
+      "route": "/cloud-services",
+      "rewrite": "/cloud-services.html"
     },
     {
-      "route": "/contact.html",
-      "redirect": "/contact",
-      "statusCode": 301
+      "route": "/email-security",
+      "rewrite": "/email-security.html"
     },
     {
-      "route": "/cybersecurity.html",
-      "redirect": "/cybersecurity",
-      "statusCode": 301
+      "route": "/network-security",
+      "rewrite": "/network-security.html"
     },
     {
-      "route": "/dlp.html",
-      "redirect": "/dlp",
-      "statusCode": 301
+      "route": "/404",
+      "rewrite": "/404.html"
     },
     {
-      "route": "/dynamics-365.html",
-      "redirect": "/dynamics-365",
-      "statusCode": 301
+      "route": "/microsoft-365-migration-guide",
+      "rewrite": "/microsoft-365-migration-guide.html"
     },
     {
-      "route": "/email-security.html",
-      "redirect": "/email-security",
-      "statusCode": 301
+      "route": "/google-workspace",
+      "rewrite": "/google-workspace.html"
     },
     {
-      "route": "/endpoint-security.html",
-      "redirect": "/endpoint-security",
-      "statusCode": 301
+      "route": "/microsoft-infrastructure",
+      "rewrite": "/microsoft-infrastructure.html"
     },
     {
-      "route": "/google-cloud.html",
-      "redirect": "/google-cloud",
-      "statusCode": 301
+      "route": "/all-products",
+      "rewrite": "/all-products.html"
     },
     {
-      "route": "/google-workspace.html",
-      "redirect": "/google-workspace",
-      "statusCode": 301
+      "route": "/zoho",
+      "rewrite": "/zoho.html"
     },
     {
-      "route": "/licensing.html",
-      "redirect": "/licensing",
-      "statusCode": 301
+      "route": "/zero-trust-security-guide",
+      "rewrite": "/zero-trust-security-guide.html"
     },
     {
-      "route": "/managed-services.html",
-      "redirect": "/managed-services",
-      "statusCode": 301
+      "route": "/microsoft-365-business-basic-vs-standard-vs-premium-2026",
+      "rewrite": "/microsoft-365-business-basic-vs-standard-vs-premium-2026.html"
     },
     {
-      "route": "/microsoft-365.html",
-      "redirect": "/microsoft-365",
-      "statusCode": 301
+      "route": "/microsoft-365",
+      "rewrite": "/microsoft-365.html"
     },
     {
-      "route": "/microsoft-365-backup-guide.html",
-      "redirect": "/microsoft-365-backup-guide",
-      "statusCode": 301
+      "route": "/partners",
+      "rewrite": "/partners.html"
     },
     {
-      "route": "/microsoft-365-business-basic-vs-standard-vs-premium-2026.html",
-      "redirect": "/microsoft-365-business-basic-vs-standard-vs-premium-2026",
-      "statusCode": 301
+      "route": "/azure",
+      "rewrite": "/azure.html"
     },
     {
-      "route": "/microsoft-365-copilot-complete-guide-2026.html",
-      "redirect": "/microsoft-365-copilot-complete-guide-2026",
-      "statusCode": 301
+      "route": "/azure-vs-aws-2026",
+      "rewrite": "/azure-vs-aws-2026.html"
     },
     {
-      "route": "/microsoft-365-migration-guide.html",
-      "redirect": "/microsoft-365-migration-guide",
-      "statusCode": 301
+      "route": "/microsoft-security",
+      "rewrite": "/microsoft-security.html"
     },
     {
-      "route": "/microsoft-365-vs-google-workspace.html",
-      "redirect": "/microsoft-365-vs-google-workspace",
-      "statusCode": 301
+      "route": "/managed-services",
+      "rewrite": "/managed-services.html"
     },
     {
-      "route": "/microsoft-defender-business-guide.html",
-      "redirect": "/microsoft-defender-business-guide",
-      "statusCode": 301
+      "route": "/dlp",
+      "rewrite": "/dlp.html"
     },
     {
-      "route": "/microsoft-entra-id-guide.html",
-      "redirect": "/microsoft-entra-id-guide",
-      "statusCode": 301
+      "route": "/services",
+      "rewrite": "/services.html"
     },
     {
-      "route": "/microsoft-infrastructure.html",
-      "redirect": "/microsoft-infrastructure",
-      "statusCode": 301
+      "route": "/microsoft-365-backup-guide",
+      "rewrite": "/microsoft-365-backup-guide.html"
     },
     {
-      "route": "/microsoft-security.html",
-      "redirect": "/microsoft-security",
-      "statusCode": 301
+      "route": "/case-studies",
+      "rewrite": "/case-studies.html"
     },
     {
-      "route": "/network-security.html",
-      "redirect": "/network-security",
-      "statusCode": 301
+      "route": "/microsoft-defender-business-guide",
+      "rewrite": "/microsoft-defender-business-guide.html"
     },
     {
-      "route": "/partners.html",
-      "redirect": "/partners",
-      "statusCode": 301
+      "route": "/terms",
+      "rewrite": "/terms.html"
     },
     {
-      "route": "/privacy-policy.html",
-      "redirect": "/privacy-policy",
-      "statusCode": 301
+      "route": "/adobe",
+      "rewrite": "/adobe.html"
     },
     {
-      "route": "/services.html",
-      "redirect": "/services",
-      "statusCode": 301
+      "route": "/dynamics-365",
+      "rewrite": "/dynamics-365.html"
     },
     {
-      "route": "/support.html",
-      "redirect": "/support",
-      "statusCode": 301
+      "route": "/business-email-compromise-ransomware-protection-2026",
+      "rewrite": "/business-email-compromise-ransomware-protection-2026.html"
     },
     {
-      "route": "/terms.html",
-      "redirect": "/terms",
-      "statusCode": 301
+      "route": "/privacy-policy",
+      "rewrite": "/privacy-policy.html"
     },
     {
-      "route": "/top-cybersecurity-threats-2026.html",
-      "redirect": "/top-cybersecurity-threats-2026",
-      "statusCode": 301
+      "route": "/google-cloud",
+      "rewrite": "/google-cloud.html"
     },
     {
-      "route": "/trend-micro.html",
-      "redirect": "/trend-micro",
-      "statusCode": 301
+      "route": "/cybersecurity",
+      "rewrite": "/cybersecurity.html"
     },
     {
-      "route": "/zero-trust-security-guide.html",
-      "redirect": "/zero-trust-security-guide",
-      "statusCode": 301
+      "route": "/consulting",
+      "rewrite": "/consulting.html"
     },
     {
-      "route": "/zoho.html",
-      "redirect": "/zoho",
-      "statusCode": 301
+      "route": "/trend-micro",
+      "rewrite": "/trend-micro.html"
     },
     {
-      "route": "/index.html",
-      "redirect": "/",
-      "statusCode": 301
+      "route": "/support",
+      "rewrite": "/support.html"
     }
-  ],
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/404.html",
-      "statusCode": 404
-    }
-  },
-  "mimeTypes": {
-    ".html": "text/html",
-    ".css": "text/css",
-    ".js": "application/javascript",
-    ".webp": "image/webp"
-  },
-  "globalHeaders": {
-    "X-Content-Type-Options": "nosniff"
-  }
+  ]
 }

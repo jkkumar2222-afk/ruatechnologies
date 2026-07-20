@@ -4,89 +4,23 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>IT Help Desk &amp; End-User Support | Rua Technologies</title>
-<meta content="Help desk, remote troubleshooting, and end-user IT support from Rua Technologies for businesses across India." name="description"/>
-<link href="https://ruatechnologies.com/support" rel="canonical"/>
+<title>Google Cloud Platform (GCP) Setup &amp; Managed Services | Rua Technologies</title>
+<meta content="Google Cloud Platform account setup, workload sizing, and managed services from Rua Technologies — Compute Engine, Cloud Storage, Cloud SQL, and IAM." name="description"/>
+<link href="https://ruatechnologies.com/google-cloud" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Rua Technologies" property="og:site_name"/>
-<meta content="IT Support | Rua Technologies" property="og:title"/>
-<meta content="Ticketed help desk support, remote troubleshooting, and onboarding/offboarding for your team." property="og:description"/>
-<meta content="https://ruatechnologies.com/support" property="og:url"/>
+<meta content="Google Cloud Platform | Rua Technologies" property="og:title"/>
+<meta content="Rua Technologies delivers Microsoft 365, Azure, Google Workspace, Adobe, cybersecurity, cloud migration, backup, endpoint security and managed IT services for businesses." property="og:description"/>
+<meta content="https://ruatechnologies.com/google-cloud" property="og:url"/>
 <meta content="https://ruatechnologies.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://ruatechnologies.com/og-image.png" name="twitter:image"/>
-<meta content="IT Support | Rua Technologies" name="twitter:title"/>
-<meta content="Help desk and end-user support that keeps your team productive." name="twitter:description"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "serviceType": "IT help desk and end-user support", "provider": {"@type": "Organization", "name": "Rua Technologies", "url": "https://ruatechnologies.com/"}, "areaServed": [{"@type": "Country", "name": "India"}, {"@type": "AdministrativeArea", "name": "Madhya Pradesh"}, {"@type": "AdministrativeArea", "name": "National Capital Region"}], "description": "Ticketed help desk support, remote troubleshooting, onboarding and offboarding, and monthly support reporting for organizations across India."}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruatechnologies.com/"}, {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://ruatechnologies.com/services"}, {"@type": "ListItem", "position": 3, "name": "Support", "item": "https://ruatechnologies.com/support"}]}</script>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<style>
-  /* Support page — hero credential card, category-tagged cards */
-  body.page-support #hero { padding: 60px 0 40px; text-align: left; background: radial-gradient(circle at 8% 8%, rgba(59,130,246,0.07), transparent 42%), radial-gradient(circle at 92% 92%, rgba(217,56,118,0.05), transparent 40%), var(--surface); }
-  body.page-support .support-hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr); gap: 44px; align-items: center; }
-  body.page-support .support-hero-copy .eyebrow { margin-bottom: 12px; }
-  body.page-support .support-hero-copy h1 { color: var(--navy); font-size: clamp(28px, 3.6vw, 40px); line-height: 1.16; margin-bottom: 16px; }
-  body.page-support .support-hero-copy p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 12px; max-width: 560px; }
-  body.page-support .support-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
-  body.page-support .support-hero-actions .btn { flex: 0 0 auto; }
-  body.page-support .support-hero-jump { display: inline-flex; align-items: center; gap: 6px; color: #1d4ed8; font-size: 13.5px; font-weight: 700; text-decoration: none; }
-  body.page-support .support-hero-jump svg { width: 14px; height: 14px; transition: transform .15s ease; }
-  body.page-support .support-hero-jump:hover svg { transform: translateY(2px); }
-
-  body.page-support .support-hero-card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: 0 24px 48px -26px rgba(20,32,51,0.28); }
-  body.page-support .support-hero-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
-  body.page-support .support-hero-card-head .support-hero-badge { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 12px; background: rgba(59,130,246,0.14); flex: 0 0 auto; color: #1d4ed8; }
-  body.page-support .support-hero-card-head .support-hero-badge svg { width: 30px; height: 30px; }
-  body.page-support .support-hero-card-head b { display: block; font-size: 14.5px; color: var(--ink); }
-  body.page-support .support-hero-card-head span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
-  body.page-support .support-hero-stats { list-style: none; margin: 0 0 20px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-  body.page-support .support-hero-stats li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; background: var(--surface); border-radius: 10px; padding: 12px 8px; }
-  body.page-support .support-hero-stats b { font-size: 17px; color: var(--navy); white-space: nowrap; }
-  body.page-support .support-hero-stats span { font-size: 11px; color: var(--muted); line-height: 1.3; }
-  body.page-support .support-hero-legend { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 18px; border-top: 1px solid var(--line); }
-  body.page-support .support-hero-legend span { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
-  body.page-support .support-hero-legend span svg { width: 13px; height: 13px; }
-  body.page-support .support-hero-legend span:nth-child(1) { background: rgba(10,168,255,0.12); color: #0c6a9c; }
-  body.page-support .support-hero-legend span:nth-child(2) { background: rgba(97,40,242,0.1); color: #4c1d95; }
-  body.page-support .support-hero-legend span:nth-child(3) { background: rgba(217,56,118,0.12); color: #9d2255; }
-  body.page-support .support-hero-legend span:nth-child(4) { background: rgba(220,38,38,0.1); color: #9f1b1b; }
-
-  @media (max-width: 860px) {
-    body.page-support .support-hero-grid { grid-template-columns: 1fr; }
-  }
-
-  /* Category rail on the solutions grid */
-  .solution .phase-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 14px;
-    padding: 3px 10px 3px 3px;
-    border-radius: 99px;
-    background: var(--accent-tint);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: color-mix(in srgb, var(--accent) 75%, var(--ink));
-  }
-  .solution .phase-tag em {
-    font-style: normal;
-    display: inline-grid;
-    place-items: center;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: var(--accent);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 800;
-  }
-</style>
-<meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/>
-<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABTAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAhpJREFUeJx1k0FPU0EQx3+7b/e99hWsoUgMeICDxAt6MX4JPfAxvHj0a2ii8Wo8cDNqiAcjmCgaE6RoREmMiRjigSItmraUtu+93fGAaSD0TTKX2Z3fTP75j2q320JOOC9opVAq7wfovAcRKJcMJlBI7ogcgAhERrG4Wme/nWCNIo9xCuAEYgOf/3rmH+6y9LxOoWhwbjjiFEAD4oVb2x2YG2fjjYEtQRVh2BonAA4Y1YoFBPdrh5uX+pTjElv3NMYyVIsBQIAQqMWW+M4yq4/ec3vCczUusbzgqb1SRGdAXA5AeUHiiOT+S24sfMKMddEffvN0yVBFWLxr6DUVygwDiIANcPUmY4+rmCtn6U0J46rK9fkn+Nl1Xq9v8vVdm2Ks8ccEVSeMJAJ7TSRLsbEhiDW2lNBLQ7Z/CucmRymUAsQf20BEGCQKuVDhwYsVNuotnr39xsfvjqWVH1ycmyAsalwmiDDoMdYatNYgIAjiPNcuz3J+7AzNxh8q5Yj9vYAsEaIwRGtFljmCIMB7j1qrfpE0SXHiCa3FOU+v16NQKJAkKSMjRWamp1irblKplGk0msxMT1LbbVAuj6CjyJI5jzWGIAhotQ6IopB+v0+n0yXLHDu1OoIAiiRJOegckqTZkYjd7qForRERvBesCUApkKMW7z3Oeaw1iAhaa7IsI9Aa7wXVarVO+EuOBoEwOGOlFPLfhnKsDvAPK3YP4cM1hxYAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+<meta content="Google Cloud Platform Partner | Rua Technologies" name="twitter:title"/>
+<meta content="Authorized Google Cloud partner in India. Account setup, Compute Engine sizing, Cloud Storage, Cloud SQL, and IAM configuration and support." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Google Cloud Platform setup and managed services","provider":{"@type":"Organization","name":"Rua Technologies","url":"https://ruatechnologies.com/"},"areaServed":[{"@type":"Country","name":"India"},{"@type":"AdministrativeArea","name":"Madhya Pradesh"},{"@type":"AdministrativeArea","name":"National Capital Region"}],"description":"Google Cloud Platform account setup, Compute Engine and Cloud Storage provisioning, Cloud SQL, IAM configuration, and billing support for businesses."}</script>
+<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABTAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAhpJREFUeJx1k0FPU0EQx3+7b/e99hWsoUgMeICDxAt6MX4JPfAxvHj0a2ii8Wo8cDNqiAcjmCgaE6RoREmMiRjigSItmraUtu+93fGAaSD0TTKX2Z3fTP75j2q320JOOC9opVAq7wfovAcRKJcMJlBI7ogcgAhERrG4Wme/nWCNIo9xCuAEYgOf/3rmH+6y9LxOoWhwbjjiFEAD4oVb2x2YG2fjjYEtQRVh2BonAA4Y1YoFBPdrh5uX+pTjElv3NMYyVIsBQIAQqMWW+M4yq4/ec3vCczUusbzgqb1SRGdAXA5AeUHiiOT+S24sfMKMddEffvN0yVBFWLxr6DUVygwDiIANcPUmY4+rmCtn6U0J46rK9fkn+Nl1Xq9v8vVdm2Ks8ccEVSeMJAJ7TSRLsbEhiDW2lNBLQ7Z/CucmRymUAsQf20BEGCQKuVDhwYsVNuotnr29xsfvjqWVH1ycmyAsalwmiDDoMdYatNYgIAjiPNcuz3J+7AzNxh8q5Yj9vYAsEaIwRGtFljmCIMB7j1qrfpE0SXHiCa3FOU+v16NQKJAkKSMjRWamp1irblKplGk0msxMT1LbbVAuj6CjyJI5jzWGIAhotQ6IopB+v0+n0yXLHDu1OoIAiiRJOegckqTZkYjd7qForRERvBesCUApkKMW7z3Oeaw1iAhaa7IsI9Aa7wXVarVO+EuOBoEwOGOlFPLfhnKsDvAPK3YP4cM1hxYAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -99,14 +33,177 @@
   gtag('js', new Date());
   gtag('config', 'G-KJ2LTMCECV');
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ruatechnologies.com/"},{"@type":"ListItem","position":2,"name":"Google Cloud Platform","item":"https://ruatechnologies.com/google-cloud"}]}</script>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/>
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's the difference between support and managed services?", "acceptedAnswer": {"@type": "Answer", "text": "Support covers day-to-day help desk requests and troubleshooting; managed services adds proactive 24\u00d77 monitoring, patching, and infrastructure oversight on top."}}, {"@type": "Question", "name": "How do we submit a support request?", "acceptedAnswer": {"@type": "Answer", "text": "Via email, WhatsApp, or our ticketing system, whichever is easiest for your team \u2014 all requests are tracked to resolution."}}, {"@type": "Question", "name": "Do you support platforms you didn't originally deploy?", "acceptedAnswer": {"@type": "Answer", "text": "In most cases, yes. We'll assess your environment during onboarding and let you know if there are any limitations."}}, {"@type": "Question", "name": "What's your typical response time?", "acceptedAnswer": {"@type": "Answer", "text": "Standard tickets are triaged the same business day; urgent issues are escalated immediately."}}, {"@type": "Question", "name": "Can you handle onboarding and offboarding for new and departing staff?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We handle account provisioning, device setup, access assignment, and secure offboarding as part of ongoing support."}}]}</script>
+<style>
+  /* --- Google Cloud page: compact, colorful, enterprise-tier styling ---
+     Scoped to body.page-gcloud so it never touches other pages that share
+     the same .m365-* / .product-card class names (aws.html, google-workspace.html, etc). */
+
+  body.page-gcloud #hero {
+    padding: 60px 0 52px;
+    text-align: left;
+    background:
+      radial-gradient(circle at 8% 8%, rgba(10,168,255,0.06), transparent 42%),
+      radial-gradient(circle at 92% 92%, rgba(97,40,242,0.05), transparent 40%),
+      var(--surface);
+  }
+  body.page-gcloud .gcloud-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+    gap: 44px;
+    align-items: center;
+  }
+  body.page-gcloud .gcloud-hero-copy .eyebrow { margin-bottom: 12px; }
+  body.page-gcloud .gcloud-hero-copy h1 { color: var(--navy); font-size: clamp(28px, 3.6vw, 40px); line-height: 1.16; margin-bottom: 16px; }
+  body.page-gcloud .gcloud-hero-copy p { color: var(--muted); font-size: 15px; line-height: 1.65; margin-bottom: 12px; max-width: 560px; }
+  body.page-gcloud .gcloud-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 22px; }
+  body.page-gcloud .gcloud-hero-actions .btn { flex: 0 0 auto; }
+  body.page-gcloud .gcloud-hero-jump {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--blue);
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  body.page-gcloud .gcloud-hero-jump svg { width: 14px; height: 14px; transition: transform .15s ease; }
+  body.page-gcloud .gcloud-hero-jump:hover svg { transform: translateY(2px); }
+
+  body.page-gcloud .gcloud-hero-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 24px 48px -26px rgba(20,32,51,0.28);
+  }
+  body.page-gcloud .gcloud-hero-card-head { display: flex; align-items: center; gap: 12px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
+  body.page-gcloud .gcloud-hero-card-head .gcloud-hero-badge { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 12px; background: rgba(10,168,255,0.08); flex: 0 0 auto; }
+  body.page-gcloud .gcloud-hero-card-head img { width: 40px; height: 40px; object-fit: contain; }
+  body.page-gcloud .gcloud-hero-card-head b { display: block; font-size: 14.5px; color: var(--ink); }
+  body.page-gcloud .gcloud-hero-card-head span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+  body.page-gcloud .gcloud-hero-stats { list-style: none; margin: 0 0 20px; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  body.page-gcloud .gcloud-hero-stats li { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; background: var(--surface); border-radius: 10px; padding: 12px 8px; }
+  body.page-gcloud .gcloud-hero-stats b { font-size: 18px; color: var(--navy); white-space: nowrap; }
+  body.page-gcloud .gcloud-hero-stats span { font-size: 11px; color: var(--muted); line-height: 1.3; }
+  body.page-gcloud .gcloud-hero-legend { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+  body.page-gcloud .gcloud-hero-legend span { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; }
+  body.page-gcloud .gcloud-hero-legend span:nth-child(1) { background: rgba(10,168,255,0.1); color: #0c447c; }
+  body.page-gcloud .gcloud-hero-legend span:nth-child(2) { background: rgba(97,40,242,0.1); color: #3c3489; }
+  body.page-gcloud .gcloud-hero-legend span:nth-child(3) { background: rgba(217,119,6,0.12); color: #8a5a0f; }
+
+  @media (max-width: 860px) {
+    body.page-gcloud .gcloud-hero-grid { grid-template-columns: 1fr; }
+    body.page-gcloud .gcloud-hero-copy, body.page-gcloud .gcloud-hero-copy p { text-align: left; }
+  }
+
+  body.page-gcloud #plans { padding: 56px 0; }
+  body.page-gcloud #plans .section-head.center { margin-bottom: 30px; }
+  body.page-gcloud .m365-groups { gap: 18px; align-items: stretch; }
+
+  body.page-gcloud .m365-group {
+    position: relative;
+    padding: 22px 22px 24px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 16px 34px -22px rgba(20,32,51,0.22);
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  body.page-gcloud .m365-group:hover { transform: translateY(-3px); box-shadow: 0 20px 40px -18px rgba(20,32,51,0.24); }
+  body.page-gcloud .m365-group.business,
+  body.page-gcloud .m365-group.enterprise,
+  body.page-gcloud .m365-group.frontline { border-top: 4px solid var(--tier); }
+  body.page-gcloud .m365-group.business { --tier: var(--blue); --tier-tint: #eaf8ff; --tier-ink: #045d8a; }
+  body.page-gcloud .m365-group.enterprise { --tier: var(--violet); --tier-tint: #f4efff; --tier-ink: #4a1bc4; }
+  body.page-gcloud .m365-group.frontline { --tier: var(--amber); --tier-tint: #fff6e6; --tier-ink: #8a5a0f; }
+
+  body.page-gcloud .m365-group-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  body.page-gcloud .m365-tier-icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--tier-tint);
+    color: var(--tier-ink);
+  }
+  body.page-gcloud .m365-tier-icon svg { width: 18px; height: 18px; }
+  body.page-gcloud .m365-group-head p { margin: 0; color: var(--tier-ink); font-size: 11px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+  body.page-gcloud .m365-group-head h3 { margin: 2px 0 0; font-size: 18px; }
+  body.page-gcloud .m365-badge {
+    position: absolute;
+    top: -11px;
+    right: 20px;
+    padding: 4px 11px;
+    border-radius: 99px;
+    background: var(--tier);
+    color: #fff;
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    box-shadow: 0 6px 14px -4px rgba(10,168,255,0.45);
+  }
+  body.page-gcloud .m365-group li { padding: 10px 0; }
+  body.page-gcloud .m365-group li b { font-size: 13.5px; }
+  body.page-gcloud .m365-group li span { font-size: 11.5px; }
+  body.page-gcloud .m365-group li .m365-tags span {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 99px;
+    background: var(--tier-tint);
+    border: 1px solid var(--tier);
+    border-color: color-mix(in srgb, var(--tier) 35%, transparent);
+    color: var(--tier-ink);
+    font-size: 10.5px;
+    font-weight: 700;
+  }
+  body.page-gcloud .m365-note { margin-top: 18px; }
+
+  body.page-gcloud #core-apps { padding: 52px 0 60px; }
+  body.page-gcloud #core-apps .section-head.center { margin-bottom: 28px; }
+  body.page-gcloud #core-apps .product-grid { gap: 12px; }
+  body.page-gcloud #core-apps .product-card {
+    min-height: 210px;
+    padding: 17px;
+    border-top: 3px solid var(--acc, var(--blue));
+    border-radius: 10px;
+  }
+  body.page-gcloud #core-apps .product-card:nth-child(1) { --acc: var(--blue); }
+  body.page-gcloud #core-apps .product-card:nth-child(2) { --acc: var(--green); }
+  body.page-gcloud #core-apps .product-card:nth-child(3) { --acc: var(--magenta); }
+  body.page-gcloud #core-apps .product-card:nth-child(4) { --acc: var(--cyan); }
+  body.page-gcloud #core-apps .product-card:nth-child(5) { --acc: var(--amber); }
+  body.page-gcloud #core-apps .product-card:nth-child(6) { --acc: var(--violet); }
+  body.page-gcloud #core-apps .product-card:nth-child(7) { --acc: var(--blue); }
+  body.page-gcloud #core-apps .product-card:nth-child(8) { --acc: var(--green); }
+  body.page-gcloud #core-apps .product-head { gap: 10px; margin-bottom: 12px; }
+  body.page-gcloud #core-apps .product-logo.product-logo-img { width: 46px; height: 46px; padding: 7px; }
+  body.page-gcloud #core-apps .product-card h3 { font-size: 14.5px; }
+  body.page-gcloud #core-apps .product-card p { margin-bottom: 10px; font-size: 12.5px; }
+  body.page-gcloud #core-apps .versions { margin-bottom: 10px; padding: 8px 9px; font-size: 11px; }
+  body.page-gcloud #core-apps .product-list li { font-size: 11.5px; }
+
+  @media (max-width: 640px) {
+    body.page-gcloud .m365-badge { top: -10px; right: 16px; }
+  }
+</style>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"Rua Technologies","url":"https://ruatechnologies.com/"}
 </script>
 </head>
-<body class="page-support">
+<body class="page-gcloud">
 <a class="skip-link" href="#top">Skip to content</a>
 <div class="topbar">
 <div class="wrap">
@@ -135,7 +232,7 @@
 <a href="/google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
 <a href="/adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
 <a href="/dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
-<a href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
+<a aria-current="page" href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
 <a href="/zoho.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#E42527" height="18" rx="3" width="18" x="3" y="3"></rect><path d="M8 15l4-8 4 8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>Zoho</a>
 <a href="/microsoft-infrastructure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="13" y="13"></rect><path d="M3 13h8v8H3zM13 3h8v8h-8z" fill="none" stroke="#7FBA00" stroke-width="1.6"></path></svg>Windows &amp; SQL Server</a>
 <a href="/all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
@@ -148,7 +245,7 @@
 <a href="/managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
 <a href="/licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
 <a href="/consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
-<a aria-current="page" href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
+<a href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
 </div>
 </div>
 <div class="nav-item">
@@ -195,7 +292,7 @@
 <a href="/google-workspace.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#FBBC05" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#34A853" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Workspace</a>
 <a href="/adobe.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 4h6l10 16h-6z" fill="#FA0F00"></path><path d="M9.5 4L4 20" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 13h-5" fill="none" stroke="#FA0F00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Adobe</a>
 <a href="/dynamics-365.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 3v18h18" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M7 15l4-6 3 4 5-8" fill="none" stroke="#0F6CBD" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Dynamics 365</a>
-<a href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
+<a aria-current="page" href="/google-cloud.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="9" cy="7" fill="#4285F4" r="3"></circle><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6" fill="none" stroke="#EA4335" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="17" cy="7" fill="#34A853" r="2.3"></circle><path d="M15.5 15.2c1.2-.4 2.6-.3 3.8.5 1.4.9 2.2 2.3 2.2 4" fill="none" stroke="#FBBC05" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Google Cloud</a>
 <a href="/zoho.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#E42527" height="18" rx="3" width="18" x="3" y="3"></rect><path d="M8 15l4-8 4 8" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg>Zoho</a>
 <a href="/microsoft-infrastructure.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#F25022" height="8" width="8" x="3" y="3"></rect><rect fill="#00A4EF" height="8" width="8" x="13" y="13"></rect><path d="M3 13h8v8H3zM13 3h8v8h-8z" fill="none" stroke="#7FBA00" stroke-width="1.6"></path></svg>Windows &amp; SQL Server</a>
 <a href="/all-products.html"><svg aria-hidden="true" viewbox="0 0 24 24"><rect fill="#4F46E5" height="7" rx="1.5" width="7" x="3" y="3"></rect><rect fill="#6366F1" height="7" rx="1.5" width="7" x="14" y="3"></rect><rect fill="#818CF8" height="7" rx="1.5" width="7" x="3" y="14"></rect><rect fill="#A5B4FC" height="7" rx="1.5" width="7" x="14" y="14"></rect></svg>All Products</a>
@@ -208,7 +305,7 @@
 <a href="/managed-services.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z" fill="none" stroke="#F59E0B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Managed Services</a>
 <a href="/licensing.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#10B981" opacity="0.15" r="9"></circle><circle cx="12" cy="12" fill="none" r="9" stroke="#10B981" stroke-width="1.8"></circle><path d="M9 12l2 2 4-4" fill="none" stroke="#10B981" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Licensing</a>
 <a href="/consulting.html"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="11" cy="11" fill="none" r="7" stroke="#8B5CF6" stroke-width="1.8"></circle><path d="M21 21l-4.35-4.35" fill="none" stroke="#8B5CF6" stroke-linecap="round" stroke-width="1.8"></path></svg>Consulting</a>
-<a aria-current="page" href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
+<a href="/support.html"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="3" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="3" y="13"></rect><rect fill="#3B82F6" height="7" opacity="0.15" rx="2" width="4" x="17" y="13"></rect><rect fill="none" height="7" rx="2" stroke="#3B82F6" stroke-width="1.8" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3" fill="none" stroke="#3B82F6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>Support</a>
 </div>
 </div>
 <div class="nav-group">
@@ -242,147 +339,103 @@
 </header>
 <main id="top" role="main">
 <section id="hero">
-<div class="wrap support-hero-grid">
-<div class="support-hero-copy">
-<p class="eyebrow">Support</p>
-<h1>Help desk and end-user support that keeps your team productive.</h1>
-<p>Rua Technologies provides ticketed help desk support, remote troubleshooting, and day-to-day IT assistance across Microsoft 365, Google Workspace, endpoints, and the platforms we deploy.</p>
-<p>Support isn't an afterthought to deployment — it's the same team that set up your systems, so tickets get resolved faster with full context.</p>
-<div class="support-hero-actions">
-<a class="btn primary" href="/contact.html">Talk to our support team</a>
-<a class="support-hero-jump" href="#overview">See what's included <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
+<div class="wrap gcloud-hero-grid">
+<div class="gcloud-hero-copy">
+<p class="eyebrow">Google Cloud Platform</p>
+<h1>Google Cloud Platform account setup, workload sizing, and managed support.</h1>
+<p>Rua Technologies delivers enterprise IT solutions including Microsoft 365, Azure, cybersecurity, cloud migration, managed IT services, and digital transformation tailored to modern businesses.</p>
+<p>Rua Technologies is an authorized Google Cloud partner, helping businesses across Bhopal, Indore, Nagpur, the NCR, and the rest of India provision GCP projects correctly, size Compute Engine and storage against real workloads, and keep billing and access under one accountable team.</p>
+<p>Most GCP engagements start with one of two needs: standing up a new project with sane billing, IAM, and networking defaults from day one, or reviewing an existing account where spend has grown faster than anyone planned for. We size resources against actual usage and lock down access with least-privilege IAM roles.</p>
+<div class="gcloud-hero-actions">
+<a class="btn primary" href="/contact.html">Talk to a Google Cloud specialist</a>
+<a class="gcloud-hero-jump" href="#plans">See where GCP fits <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
 </div>
 </div>
-<aside aria-label="Rua Technologies support credentials" class="support-hero-card">
-<div class="support-hero-card-head">
-<div class="support-hero-badge"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg></div>
-<div><b>Support that knows your setup</b><span>Help desk, remote &amp; onboarding</span></div>
+<aside aria-label="Rua Technologies Google Cloud credentials" class="gcloud-hero-card">
+<div class="gcloud-hero-card-head">
+<div class="gcloud-hero-badge"><img alt="Google Partner" decoding="async" loading="lazy" src="images/google-partner.png"/></div>
+<div><b>Authorized Google Cloud Partner</b><span>Setup, migration &amp; management</span></div>
 </div>
-<ul class="support-hero-stats">
-<li><b>Day one</b><span>Support access from onboarding</span></li>
-<li><b>Same-day</b><span>Most remote issues resolved</span></li>
-<li><b>Monthly</b><span>Reporting &amp; SLA tracking</span></li>
+<ul class="gcloud-hero-stats">
+<li><b>10+ yrs</b><span>IT &amp; cloud partner experience</span></li>
+<li><b>Authorized</b><span>Google Cloud partner</span></li>
+<li><b>1 business day</b><span>Response on support requests</span></li>
 </ul>
-<div class="support-hero-legend">
-<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg>Help Desk</span>
-<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"></path></svg>Remote Support</span>
-<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"></path></svg>Onboarding</span>
-<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.41l9 9a2 2 0 0 0 2.82 0l7.17-7.17a2 2 0 0 0 0-2.82l-9-9z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg>Reporting</span>
+<div class="gcloud-hero-legend">
+<span>Compute &amp; hosting</span>
+<span>Storage &amp; databases</span>
+<span>Access &amp; management</span>
 </div>
 </aside>
 </div>
-</section><section class="alt" id="overview">
+</section>
+<section class="m365-offerings alt" id="plans">
 <div class="wrap">
 <div class="section-head center">
-<p class="eyebrow">What's included</p>
-<h2>Support coverage for the systems we deploy — and the ones we don't.</h2>
+<p class="eyebrow">Where GCP fits</p>
+<h2>Cloud infrastructure for compute, storage, and managed databases.</h2>
+<p>We help you provision, secure, migrate, and manage the Google Cloud services that fit your workloads and budget.</p>
 </div>
-<div class="solutions">
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg></div>
-<p class="phase-tag"><em>01</em>Raise</p>
-<h3>Help desk &amp; ticketing</h3>
-<p>A responsive ticketing system with clear escalation paths, so requests don't disappear into an inbox.</p>
-<ul>
-<li>Ticketed support requests</li><li>Email, phone &amp; WhatsApp support channels</li><li>Priority triage for urgent issues</li><li>Escalation to specialist teams</li><li>Ticket status visibility</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Teams that want a predictable, tracked way to raise IT issues.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> Support access is active from day one of onboarding.</p>
+<div class="m365-groups">
+<article class="m365-group business">
+<span class="m365-badge">Most requested</span>
+<div class="m365-group-head">
+<span aria-hidden="true" class="m365-tier-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="10" rx="1.5" width="16" x="4" y="4"></rect><path d="M8 20h8M12 14v6"></path></svg></span>
+<div><p>Compute &amp; hosting</p><h3>Run your workloads in the cloud</h3></div>
+</div>
+<ul><li><b>Compute Engine</b><span>Virtual machines sized to your workload, with committed-use discounts for predictable, long-running servers. We handle machine type selection, persistent disk tiering, and firewall rules so each instance is exposed only where it needs to be.</span><div class="m365-tags"><span>Pay-as-you-go</span><span>Committed-use discounts</span></div></li><li><b>Google Kubernetes Engine</b><span>Managed Kubernetes clusters for containerized workloads, with autoscaling and automated upgrades. Includes node pool sizing, workload identity configuration, and cluster autoscaling policies so capacity tracks actual demand.</span><div class="m365-tags"><span>Managed containers</span><span>Autoscaling</span></div></li><li><b>App Engine</b><span>Fully managed hosting for web apps and APIs without server maintenance, with built-in scaling. We configure traffic splitting for safe releases and custom domains with managed TLS so you're production-ready from day one.</span><div class="m365-tags"><span>PaaS</span><span>Auto-scaling</span></div></li></ul>
 </article>
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"></path></svg></div>
-<p class="phase-tag"><em>02</em>Resolve</p>
-<h3>Remote troubleshooting</h3>
-<p>Remote diagnosis and fixes for most day-to-day issues, without waiting for an on-site visit.</p>
-<ul>
-<li>Remote desktop and device troubleshooting</li><li>Application and connectivity issues</li><li>Account access and permission fixes</li><li>Software installation and configuration</li><li>Guided troubleshooting for end users</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Distributed or hybrid teams that need fast support regardless of location.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> Most remote issues are resolved same-day.</p>
+<article class="m365-group enterprise">
+<div class="m365-group-head">
+<span aria-hidden="true" class="m365-tier-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></span>
+<div><p>Storage &amp; databases</p><h3>Store, back up, and query your data</h3></div>
+</div>
+<ul><li><b>Cloud Storage</b><span>Object storage tiers (Standard, Nearline, Coldline, Archive) matched to access frequency and cost targets. Lifecycle policies move aging data to cheaper tiers automatically, and bucket-level IAM keeps access scoped to the teams that need it.</span><div class="m365-tags"><span>Tiered storage</span><span>Lifecycle rules</span></div></li><li><b>Cloud SQL</b><span>Fully managed MySQL, PostgreSQL, or SQL Server databases with automated backups, patching, and high availability. We size instances against real query load and configure read replicas where reporting traffic needs to stay off the primary.</span><div class="m365-tags"><span>Managed databases</span><span>Automated backups</span></div></li><li><b>BigQuery</b><span>Serverless data warehouse for analytics at scale, queried with standard SQL. We set up dataset structure, access controls, and cost controls (slot reservations or on-demand query caps) so ad hoc analysis doesn't produce surprise bills.</span><div class="m365-tags"><span>Serverless analytics</span><span>Cost controls</span></div></li></ul>
 </article>
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"></path></svg></div>
-<p class="phase-tag"><em>03</em>Provision</p>
-<h3>Onboarding &amp; offboarding</h3>
-<p>Consistent account and device setup for new hires, and clean, secure offboarding when someone leaves.</p>
-<ul>
-<li>New hire account and license provisioning</li><li>Device setup and configuration</li><li>Access and permission assignment</li><li>Secure offboarding and access revocation</li><li>Asset return tracking</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Growing teams with regular hiring who want a repeatable onboarding process.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> Onboarding requests are typically actioned within 1 business day.</p>
+<article class="m365-group frontline">
+<div class="m365-group-head">
+<span aria-hidden="true" class="m365-tier-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"></path></svg></span>
+<div><p>Access &amp; management</p><h3>Provision, secure, and stay in control</h3></div>
+</div>
+<ul><li><b>Project &amp; billing setup</b><span>New project provisioning with billing accounts, budgets, and export to BigQuery for cost analysis. We set budget alerts at multiple thresholds so spend surprises get caught before the monthly invoice does.</span><div class="m365-tags"><span>Budget alerts</span><span>Cost visibility</span></div></li><li><b>Identity &amp; access (IAM)</b><span>Role-based permissions scoped to projects, folders, and organizations, replacing broad owner/editor access with least-privilege roles. We run periodic access reviews so permissions don't quietly accumulate over time.</span><div class="m365-tags"><span>Least-privilege</span><span>Access reviews</span></div></li><li><b>Workload sizing &amp; migration</b><span>Assessment of current infrastructure, sizing guidance, and a migration plan that limits business disruption. We inventory dependencies, size target resources against real usage data, and run a pilot before touching production.</span><div class="m365-tags"><span>Assessment-led</span><span>Low disruption</span></div></li></ul>
 </article>
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.41l9 9a2 2 0 0 0 2.82 0l7.17-7.17a2 2 0 0 0 0-2.82l-9-9z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg></div>
-<p class="phase-tag"><em>04</em>Review</p>
-<h3>Monthly reporting &amp; reviews</h3>
-<p>Regular visibility into ticket trends, recurring issues, and what's costing your team the most time.</p>
-<ul>
-<li>Monthly ticket and resolution reporting</li><li>Recurring issue identification</li><li>Support trend reviews</li><li>Recommendations to reduce ticket volume</li><li>SLA tracking</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Organizations that want data on where IT time is actually going.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> First monthly report delivered after 30 days of coverage.</p>
-</article>
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg></div>
-<p class="phase-tag"><em>05</em>Deploy</p>
-<h3>On-site &amp; hardware support</h3>
-<p>Hands-on support for hardware issues, new equipment setup, and office moves that can't be solved remotely.</p>
-<ul>
-<li>On-site troubleshooting visits</li><li>New device setup and imaging</li><li>Hardware repair coordination</li><li>Office move and relocation support</li><li>Peripheral and network equipment setup</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Teams with physical offices who need hardware issues handled in person, not just talked through over a call.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> On-site visits typically scheduled within 1–2 business days.</p>
-</article>
-<article class="solution">
-<div class="icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13z"></path><path d="M4 19.5V6.5"></path></svg></div>
-<p class="phase-tag"><em>06</em>Empower</p>
-<h3>Knowledge base &amp; self-service</h3>
-<p>A growing library of how-to guides and troubleshooting steps so common issues can be solved in minutes without waiting for a ticket.</p>
-<ul>
-<li>Step-by-step how-to articles</li><li>Common issue troubleshooting guides</li><li>Password reset and account self-service</li><li>New hire quick-start guides</li><li>Searchable internal knowledge base</li>
-</ul>
-<p class="solution-fit"><b>Best for:</b> Teams that want to cut down repetitive tickets for issues employees can fix themselves.</p>
-<p class="solution-timeline"><b>Typical timeline:</b> Initial knowledge base built out within the first 30 days of onboarding.</p>
-</article>
+</div>
+<p class="m365-note">Service availability, pricing, and configuration options can vary by region and agreement. Contact Rua for a tailored recommendation.</p>
+</div>
+</section>
+<section id="core-apps">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">Core services</p>
+<h2>The Google Cloud services we set up, secure, and support.</h2>
+</div>
+<div class="product-grid">
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Compute Engine</h3><small>Virtual machines</small></div></div><p>On-demand compute sized to your workload, with committed-use discounts available for predictable, long-running servers. We match machine type and disk tier to the actual CPU, memory, and IOPS the workload needs.</p><div class="versions"><b>Covers</b>Machine type sizing, OS provisioning, persistent disk configuration, firewall rules</div><ul class="product-list"><li>Custom and predefined machine types</li><li>Machine type matched to actual CPU, memory, and IOPS needs</li><li>Committed-use discount planning</li><li>Snapshot policy attached at provisioning</li><li>Persistent disk tiering by workload</li><li>Firewall rules scoped per instance</li><li>OS provisioning included at setup</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Cloud Storage</h3><small>Object storage</small></div></div><p>Standard, Nearline, Coldline, and Archive storage tiers priced by access frequency and retention needs. Lifecycle rules move data automatically as it ages, so you're not manually managing storage costs month to month.</p><div class="versions"><b>Covers</b>Bucket setup, lifecycle policies, storage class selection</div><ul class="product-list"><li>Tiered by access pattern</li><li>Lifecycle rules to auto-archive</li><li>Regional and multi-regional redundancy</li><li>Bucket-level IAM and signed URLs</li><li>Standard, Nearline, Coldline, and Archive tiers</li><li>Storage class selection matched to retention needs</li><li>Priced by how often data is actually accessed</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Cloud SQL</h3><small>Managed database</small></div></div><p>Fully managed MySQL, PostgreSQL, or SQL Server with automated patching, backups, and high availability. Read replicas offload reporting traffic so it doesn't compete with production queries.</p><div class="versions"><b>Covers</b>Instance sizing, backup retention, replica configuration</div><ul class="product-list"><li>Automated patching and backups</li><li>High-availability configuration</li><li>Read replicas for reporting workloads</li><li>Point-in-time restore for accidental data loss</li><li>MySQL, PostgreSQL, or SQL Server support</li><li>Instance sizing matched to query load</li><li>Read traffic kept off production queries</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Identity &amp; Access Management (IAM)</h3><small>Access control</small></div></div><p>Role-based permissions across projects, folders, and organizations, replacing broad access grants with scoped, least-privilege roles. We run periodic access reviews so permissions stay tied to who actually needs them.</p><div class="versions"><b>Covers</b>Role assignment, service account setup, access reviews</div><ul class="product-list"><li>Least-privilege role design</li><li>Service account key management</li><li>Organization policy constraints</li><li>Scheduled access reviews for privileged roles</li><li>Role assignment across projects, folders, and orgs</li><li>Replaces broad owner/editor access</li><li>Permissions tied to who actually needs them</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Virtual Private Cloud (VPC)</h3><small>Networking</small></div></div><p>Virtual networks, firewalls, and secure connectivity between GCP, your offices, and other cloud services. Subnets are segmented by function so a compromise in one segment can't move freely to another.</p><div class="versions"><b>Covers</b>VPC design, firewall rules, Cloud VPN/Interconnect</div><ul class="product-list"><li>Segmented, secure network design</li><li>Site-to-site VPN and Interconnect</li><li>Centralized firewall policy</li><li>Private Google Access for internal traffic</li><li>Subnets segmented by function</li><li>Secure connectivity to offices and other clouds</li><li>VPC design tailored to your architecture</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Billing &amp; cost management</h3><small>Budgets &amp; visibility</small></div></div><p>Billing account setup, budget alerts, and cost export to BigQuery for ongoing spend analysis. We review usage monthly to flag idle or oversized resources and recommend committed-use discounts where usage is steady.</p><div class="versions"><b>Covers</b>Billing account setup, budget alerts, cost export and dashboards</div><ul class="product-list"><li>Multi-threshold budget alerts</li><li>Monthly usage review</li><li>Committed-use discount planning</li><li>Cost export to BigQuery for analysis</li><li>Billing account setup for new projects</li><li>Flags idle or oversized resources</li><li>Ongoing spend visibility across teams</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>Google Kubernetes Engine</h3><small>Managed containers</small></div></div><p>Managed Kubernetes clusters for containerized workloads, with node pool sizing and autoscaling tuned to actual traffic patterns rather than worst-case guesses. We configure workload identity so pods authenticate to other GCP services without static credentials sitting in code.</p><div class="versions"><b>Covers</b>Cluster provisioning, node pool sizing, autoscaling policy configuration</div><ul class="product-list"><li>Managed control plane, automated upgrades</li><li>Node pool autoscaling tuned to demand</li><li>Workload identity for secure service access</li><li>Suited to microservice architectures</li><li>Node pool sizing tuned to actual traffic</li><li>No static credentials sitting in code</li><li>Cluster provisioning handled end to end</li></ul></article>
+<article class="product-card"><div class="product-head"><span class="product-logo product-logo-img"><img alt="Google logo" decoding="async" height="220" loading="lazy" src="images/google-logo.png" width="220"/></span><div><h3>BigQuery</h3><small>Serverless analytics</small></div></div><p>Serverless data warehouse for analytics at scale, queried with standard SQL and billed by data scanned or reserved slots. We set dataset access controls and query cost caps so exploratory analysis doesn't produce a surprise line item on the monthly bill.</p><div class="versions"><b>Covers</b>Dataset structure, access controls, cost control configuration</div><ul class="product-list"><li>Serverless, no infrastructure to manage</li><li>Standard SQL queries at scale</li><li>On-demand or slot-reservation pricing</li><li>Query cost caps to prevent overspend</li><li>Dataset access controls configured up front</li><li>Billed by data scanned or reserved slots</li><li>Built for exploratory and scheduled analysis</li></ul></article>
 </div>
 </div>
 </section>
-<section class="alt" id="related">
-<div class="wrap">
-<div class="section-head center">
-<p class="eyebrow">Related</p>
-<h2>Often paired with support.</h2>
-</div>
-<div class="catalogue-grid">
-<a class="catalogue-card" href="/managed-services.html"><b>Managed IT Services</b><span>Add proactive monitoring alongside reactive support.</span><i>Explore Managed Services →</i></a><a class="catalogue-card" href="/cloud-services.html"><b>Cloud Services</b><span>Support for cloud infrastructure and migrations.</span><i>Explore Cloud Services →</i></a><a class="catalogue-card" href="/microsoft-365.html"><b>Microsoft 365</b><span>Day-to-day support for Exchange, Teams, and SharePoint.</span><i>Explore Microsoft 365 →</i></a>
-</div>
-</div>
-</section><section class="alt" id="faq">
-<div class="wrap">
-<div class="section-head center">
-<p class="eyebrow">FAQ</p>
-<h2>Common questions about support.</h2>
-</div>
-<div class="faq-list">
-<details class="faq-item" open="" style="--faq-color:#087fc3;--faq-tint:#edf8ff"><summary><span class="faq-q">Q</span>What's the difference between support and managed services?</summary><p>Support covers day-to-day help desk requests and troubleshooting; managed services adds proactive 24×7 monitoring, patching, and infrastructure oversight on top.</p></details><details class="faq-item" style="--faq-color:#6128f2;--faq-tint:#f3efff"><summary><span class="faq-q">Q</span>How do we submit a support request?</summary><p>Via email, WhatsApp, or our ticketing system, whichever is easiest for your team — all requests are tracked to resolution.</p></details><details class="faq-item" style="--faq-color:#07876c;--faq-tint:#ebfaf5"><summary><span class="faq-q">Q</span>Do you support platforms you didn't originally deploy?</summary><p>In most cases, yes. We'll assess your environment during onboarding and let you know if there are any limitations.</p></details><details class="faq-item" style="--faq-color:#b77816;--faq-tint:#fff7e7"><summary><span class="faq-q">Q</span>What's your typical response time?</summary><p>Standard tickets are triaged the same business day; urgent issues are escalated immediately.</p></details><details class="faq-item" style="--faq-color:#d93876;--faq-tint:#fff0f6"><summary><span class="faq-q">Q</span>Can you handle onboarding and offboarding for new and departing staff?</summary><p>Yes. We handle account provisioning, device setup, access assignment, and secure offboarding as part of ongoing support.</p></details>
-</div>
-</div>
-</section><section class="contact" id="support-cta">
+<section class="contact" id="gcloud-cta">
 <div class="wrap contact-grid">
 <div>
 <div class="section-head">
-<p class="eyebrow">Get in touch</p>
-<h2>Need reliable day-to-day IT support?</h2>
-<p>Tell us about your team size and current pain points — we'll recommend the right level of support coverage.</p>
+<h2>Not sure which Google Cloud services fit your workloads?</h2>
+<p>Send us your current setup and growth plans, and we'll recommend the GCP architecture and migration path that fits your budget and compliance needs — no obligation.</p>
 </div>
 <div class="contact-lines">
 <div class="contact-line"><strong>Email</strong><span><a href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a></span></div>
 <div class="contact-line"><strong>WhatsApp</strong><span><a class="whatsapp-inline" href="https://wa.me/919131571358" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12.004 2.003c-5.523 0-10 4.477-10 10 0 1.766.462 3.492 1.34 5.007L2 22l5.117-1.32a9.965 9.965 0 0 0 4.887 1.276h.004c5.522 0 9.999-4.477 9.999-10 0-2.671-1.04-5.182-2.929-7.071a9.935 9.935 0 0 0-7.074-2.882zm0 18.166h-.003a8.302 8.302 0 0 1-4.233-1.16l-.303-.18-3.037.784.81-2.96-.198-.304a8.302 8.302 0 0 1-1.276-4.43c0-4.591 3.735-8.326 8.326-8.326 2.223 0 4.313.867 5.884 2.44a8.269 8.269 0 0 1 2.437 5.89c0 4.592-3.735 8.246-8.407 8.246z"></path></svg>Chat with us</a></span></div>
-<div class="contact-line"><strong>Scope</strong><span>Any of our 18 service areas — cloud, security, AI, licensing, and support</span></div>
-<div class="contact-line"><strong>Response</strong><span>A practical next step, recommended within one business day</span></div>
+<div class="contact-line"><strong>Scope</strong><span>GCP setup, workload sizing, and billing review</span></div>
+<div class="contact-line"><strong>Response</strong><span>A practical recommendation within one business day</span></div>
 </div>
 </div>
-<aside aria-label="Contact" class="contact-card">
+<aside aria-label="Google Cloud contact" class="contact-card">
 <img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo-white-original.png" width="220"/>
 <h3>Speak with Rua Technologies</h3>
 <p>Email or WhatsApp us with what you're working on — we'll route it to the right specialist and follow up the same business day.</p>

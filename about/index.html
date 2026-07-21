@@ -19,11 +19,16 @@
 <meta content="https://ruatechnologies.com/og-image.png" name="twitter:image"/>
 <meta content="About Rua Technologies" name="twitter:title"/>
 <meta content="Enterprise IT partner for licensing, cloud, and cybersecurity across India." name="twitter:description"/>
-<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABTAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAhpJREFUeJx1k0FPU0EQx3+7b/e99hWsoUgMeICDxAt6MX4JPfAxvHj0a2ii8Wo8cDNqiAcjmCgaE6RoREmMiRjigSItmraUtu+93fGAaSD0TTKX2Z3fTP75j2q320JOOC9opVAq7wfovAcRKJcMJlBI7ogcgAhERrG4Wme/nWCNIo9xCuAEYgOf/3rmH+6y9LxOoWhwbjjiFEAD4oVb2x2YG2fjjYEtQRVh2BonAA4Y1YoFBPdrh5uX+pTjElv3NMYyVIsBQIAQqMWW+M4yq4/ec3vCczUusbzgqb1SRGdAXA5AeUHiiOT+S24sfMKMddEffvN0yVBFWLxr6DUVygwDiIANcPUmY4+rmCtn6U0J46rK9fkn+Nl1Xq9v8vVdm2Ks8ccEVSeMJAJ7TSRLsbEhiDW2lNBLQ7Z/CucmRymUAsQf20BEGCQKuVDhwYsVNuotnr29xsfvjqWVH1ycmyAsalwmiDDoMdYatNYgIAjiPNcuz3J+7AzNxh8q5Yj9vYAsEaIwRGtFljmCIMB7j1qrfpE0SXHiCa3FOU+v16NQKJAkKSMjRWamp1irblKplGk0msxMT1LbbVAuj6CjyJI5jzWGIAhotQ6IopB+v0+n0yXLHDu1OoIAiiRJOegckqTZkYjd7qForRERvBesCUApkKMW7z3Oeaw1iAhaa7IsI9Aa7wXVarVO+EuOBoEwOGOlFPLfhnKsDvAPK3YP4cM1hxYAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#0b3d91"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></noscript>
+<link href="/style.css" rel="stylesheet"/>
 <!-- Google Analytics (GA4) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJ2LTMCECV"></script>
 <script>
@@ -33,6 +38,7 @@
   gtag('config', 'G-KJ2LTMCECV');
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ruatechnologies.com/"},{"@type":"ListItem","position":2,"name":"About","item":"https://ruatechnologies.com/about"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Are you a genuine, authorized partner for the vendors you sell?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — our partner and reseller status with Microsoft, Google, Adobe, AWS, Autodesk, Trend Micro, and Seqrite can be verified directly with each vendor. We don't sell through gray-market or unauthorized channels."}}, {"@type": "Question", "name": "Do you only work with businesses in Madhya Pradesh?", "acceptedAnswer": {"@type": "Answer", "text": "No. We have dedicated on-ground presence across Central India, Chhattisgarh, and the Delhi NCR, and support businesses anywhere else in India remotely with the same standard of service."}}, {"@type": "Question", "name": "We already have an internal IT team — can you still help?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most of our clients have an internal IT or finance team; we work alongside them to handle procurement, vendor escalation, and specialist deployment work rather than replacing them."}}, {"@type": "Question", "name": "How is pricing structured?", "acceptedAnswer": {"@type": "Answer", "text": "Licensing is priced at the vendor's published rates through our partner channel; project and support work is quoted based on scope after a discovery call. There's no markup hidden in the license cost."}}, {"@type": "Question", "name": "What happens after a project goes live?", "acceptedAnswer": {"@type": "Answer", "text": "Every engagement includes a handover to our managed support team, who track renewal dates, monitor security posture, and stay available for ongoing questions — not just a one-time deployment."}}]}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <style>
   /* Layout + design pass — about page only */
@@ -78,7 +84,8 @@
   .about-badge img { max-width: 100%; max-height: 56px; object-fit: contain; }
 
   /* Body copy — two labeled, colour-accented note cards instead of a flat text column */
-  #about .about-copy {
+  #about .about-copy,
+  #story .about-copy {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-count: unset;
@@ -87,14 +94,16 @@
     padding-top: 0;
     border-top: none;
   }
-  #about .about-copy-block {
+  #about .about-copy-block,
+  #story .about-copy-block {
     padding: 20px 22px;
     border-radius: 12px;
     background: var(--surface);
     border-left: 4px solid var(--tag-color, var(--blue));
     break-inside: avoid;
   }
-  #about .about-copy-tag {
+  #about .about-copy-tag,
+  #story .about-copy-tag {
     display: block;
     margin-bottom: 10px;
     color: var(--tag-color, var(--blue));
@@ -103,13 +112,18 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-  #about .about-copy p { margin: 0; color: var(--ink-2); font-size: 14px; line-height: 1.65; }
+  #about .about-copy p,
+  #story .about-copy p { margin: 0; color: var(--ink-2); font-size: 14px; line-height: 1.65; }
+  #story .section-head.center p { max-width: 640px; margin: 0 auto; }
 
   /* Value cards get their own heading so the grid isn't unexplained */
   #about .value-section-head { margin-bottom: 20px; }
-  #about .value-cards { gap: 12px; margin-bottom: 8px; }
-  #about .value-card { padding: 16px 16px 14px; }
-  #about .value-card .icon { width: 34px; height: 34px; margin-bottom: 8px; }
+  #about .value-cards,
+  #team .value-cards { gap: 12px; margin-bottom: 8px; }
+  #about .value-card,
+  #team .value-card { padding: 16px 16px 14px; }
+  #about .value-card .icon,
+  #team .value-card .icon { width: 34px; height: 34px; margin-bottom: 8px; }
 
   /* Ownership panel — accent bar to match the card language used elsewhere */
   #about .ownership {
@@ -126,16 +140,22 @@
   #about-cta .contact-line { padding: 12px 0; }
   #about-cta .contact-card { padding: 20px; }
 
+  /* New sections: story milestones, process steps, industries, team */
+  #story .about-copy-block em { color: var(--ink-2); font-style: italic; opacity: 0.85; }
+  #how-we-work .process-steps { margin-top: 6px; }
+  #industries-served .industry-grid { margin-top: 6px; }
+
   @media (max-width: 900px) {
     #about .about-head-row { grid-template-columns: 1fr; }
   }
   @media (max-width: 640px) {
     #top section { padding: 36px 0; }
     #hero { padding: 36px 0 26px; }
-    #about .about-copy { grid-template-columns: 1fr; }
+    #about .about-copy,
+    #story .about-copy { grid-template-columns: 1fr; }
   }
 </style>
-<meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/>
+<meta content="#0b3d91" name="theme-color"/><link as="image" href="/images/rua-technologies-logo.png" rel="preload"/>
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Rua Technologies", "url": "https://ruatechnologies.com", "email": "sales@ruatechnologies.com", "sameAs": ["https://www.linkedin.com/company/rua-technologies/about/"]}</script><script type="application/ld+json">
@@ -163,7 +183,7 @@
 <header>
 <div class="wrap nav">
 <a aria-label="Rua Technologies home" class="brand" href="/">
-<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>
+<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="128" src="/images/rua-technologies-logo.png" width="146"/>
 <span>Rua Technologies<small>Enterprise IT Partner</small></span>
 </a>
 <nav aria-label="Primary navigation" role="navigation">
@@ -221,8 +241,8 @@
 <a href="/contact">Contact</a>
 </nav>
 <button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle" type="button">
-<svg class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
-<svg class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
 </button>
 </div>
 <div class="mobile-nav" id="mobileNav">
@@ -293,6 +313,14 @@
 <div class="m365-action"><a class="btn primary" href="/contact">Talk to our team</a></div>
 </div>
 </section>
+<div aria-label="Rua Technologies at a glance" class="stats-band">
+<div class="wrap">
+<div class="stat"><b>8+</b><span>Official vendor partnerships</span></div>
+<div class="stat"><b>15+</b><span>Industries served, from healthcare to finance</span></div>
+<div class="stat"><b>41+</b><span>Representative engagement scenarios delivered</span></div>
+<div class="stat"><b>4</b><span>Regions with dedicated on-ground presence</span></div>
+</div>
+</div>
 <section id="about">
 <div class="wrap">
 <div class="about-head-row">
@@ -302,10 +330,10 @@
 <p>Rua Technologies is an official, authorized partner of Microsoft, Adobe, Autodesk, Google, AWS, Trend Micro, and Seqrite. That standing means our licensing, pricing, and support come directly through vendor-recognized channels — not gray-market resale — so customers can verify our status with each vendor and trust that what they buy through Rua is genuine.</p>
 </div>
 <div class="about-stats">
-<div class="about-badge"><img alt="Microsoft Partner" decoding="async" loading="lazy" src="images/microsoft-partner.png"/>&gt;</div>
-<div class="about-badge"><img alt="Google Partner" decoding="async" loading="lazy" src="images/google-partner.png"/>&gt;</div>
-<div class="about-badge"><img alt="Adobe Certified Reseller" decoding="async" loading="lazy" src="images/adobe-certified-reseller.png"/>&gt;</div>
-<div class="about-badge"><img alt="AWS Partner Network" decoding="async" loading="lazy" src="images/aws-partner-network.png"/>&gt;</div>
+<div class="about-badge"><img width="220" height="88" alt="Microsoft Partner" decoding="async" loading="lazy" src="/images/microsoft-partner.webp"/>&gt;</div>
+<div class="about-badge"><img width="220" height="210" alt="Google Partner" decoding="async" loading="lazy" src="/images/google-partner.webp"/>&gt;</div>
+<div class="about-badge"><img width="220" height="90" alt="Adobe Certified Reseller" decoding="async" loading="lazy" src="/images/adobe-certified-reseller.webp"/>&gt;</div>
+<div class="about-badge"><img width="220" height="74" alt="AWS Partner Network" decoding="async" loading="lazy" src="/images/aws-partner-network.webp"/>&gt;</div>
 </div>
 </div>
 <div class="about-copy">
@@ -371,6 +399,113 @@
 </div>
 </div>
 </section>
+<section id="story">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">Our story</p>
+<h2>How Rua Technologies came to be.</h2>
+<p>The short version of a longer story — replace the bracketed details below with your company's actual founding story, milestones, and growth to date.</p>
+</div>
+<div class="about-copy" style="margin-bottom:0;">
+<div class="about-copy-block" style="--tag-color:var(--blue)">
+<span class="about-copy-tag">Founded</span>
+<p><em>[Founded in 20XX]</em> in Bhopal, Madhya Pradesh, Rua Technologies started as a small licensing desk helping local businesses navigate Microsoft volume licensing. <em>[Add a sentence on the founding motivation or the gap in the market you set out to close.]</em></p>
+</div>
+<div class="about-copy-block" style="--tag-color:var(--violet)">
+<span class="about-copy-tag">Partner status</span>
+<p>Over time we added authorized reseller and partner standing with Google, Adobe, AWS, Autodesk, Trend Micro, and Seqrite, growing from a single-vendor desk into a multi-ecosystem IT partner. <em>[Note the year each partnership was formalized, if useful.]</em></p>
+</div>
+<div class="about-copy-block" style="--tag-color:var(--green)">
+<span class="about-copy-tag">Regional growth</span>
+<p>What began as local support in Bhopal now covers Central India, Chhattisgarh, and the Delhi NCR with dedicated on-ground teams, plus remote coverage for businesses anywhere in India. <em>[Add the year regional expansion happened, if useful.]</em></p>
+</div>
+<div class="about-copy-block" style="--tag-color:var(--amber)">
+<span class="about-copy-tag">Today</span>
+<p>Rua Technologies now supports a team of <em>[XX]</em> specialists across licensing, cloud, security, and support — working with businesses from growing mid-size companies to large enterprises. <em>[Add a current headcount or team size once confirmed.]</em></p>
+</div>
+</div>
+</div>
+</section>
+<section class="alt" id="how-we-work">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">How we work</p>
+<h2>From first conversation to ongoing support.</h2>
+</div>
+<div aria-label="Client engagement process steps" class="process-steps">
+<div class="process-step" style="--step-color:#087fc3"><span class="process-num">1</span><span class="process-label">Discovery call</span></div>
+<div class="process-step" style="--step-color:#6128f2"><span class="process-num">2</span><span class="process-label">Recommendation</span></div>
+<div class="process-step" style="--step-color:#d93876"><span class="process-num">3</span><span class="process-label">Procurement</span></div>
+<div class="process-step process-highlight" style="--step-color:#dc2626"><span class="process-num">4</span><span class="process-label">Deployment</span></div>
+<div class="process-step" style="--step-color:#07876c"><span class="process-num">5</span><span class="process-label">Training</span></div>
+<div class="process-step" style="--step-color:#b77816"><span class="process-num">6</span><span class="process-label">Ongoing support</span></div>
+</div>
+</div>
+</section>
+<section id="industries-served">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">Who we work with</p>
+<h2>Industries we serve.</h2>
+</div>
+<div aria-label="Industries served" class="industry-grid">
+<div class="industry-card" style="--ind-color:#087fc3;--ind-tint:#edf8ff"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 21s-7-4.35-9.5-9C.7 8.2 2.3 4.5 6 4.5c2 0 3.3 1.1 4 2.2.7-1.1 2-2.2 4-2.2 3.7 0 5.3 3.7 3.5 7.5C19 16.65 12 21 12 21z"></path><path d="M9 12h2l1-2.5L13.5 14 15 12h1.5"></path></svg></span><b>Healthcare</b></div>
+<div class="industry-card" style="--ind-color:#6128f2;--ind-tint:#f3efff"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 4L2 9l10 5 10-5-10-5z"></path><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"></path><path d="M22 9v6"></path></svg></span><b>Education</b></div>
+<div class="industry-card" style="--ind-color:#d93876;--ind-tint:#fff0f6"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 21V10l6-4v15M9 21V6l6 4v11M15 21v-8l6-4v12"></path></svg></span><b>Manufacturing</b></div>
+<div class="industry-card" style="--ind-color:#b77816;--ind-tint:#fff7e7"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="16" rx="1.5" width="18" x="3" y="4"></rect><path d="M7 15l3-4 3 2.5L17 9"></path></svg></span><b>Financial Services</b></div>
+<div class="industry-card" style="--ind-color:#dc2626;--ind-tint:#fdecec"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M6 8V6a3 3 0 0 1 6 0v2"></path><rect height="12" rx="1.5" width="16" x="4" y="8"></rect></svg></span><b>Retail</b></div>
+<div class="industry-card" style="--ind-color:#07876c;--ind-tint:#ebfaf5"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="1.5" width="18" x="3" y="8"></rect><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></span><b>Professional Services</b></div>
+<div class="industry-card" style="--ind-color:#0aa8ff;--ind-tint:#eef7ff"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"></path></svg></span><b>Logistics</b></div>
+<div class="industry-card" style="--ind-color:#0b3d91;--ind-tint:#eef3fb"><span class="industry-icon"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M15 9h.01M15 13h.01"></path></svg></span><b>Government</b></div>
+</div>
+</div>
+</section>
+<section class="alt" id="team">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">Our team</p>
+<h2>Specialists across every layer of the stack.</h2>
+<p>Rua Technologies is organized around four practice areas, so every engagement has someone who owns it end to end.</p>
+</div>
+<div class="value-cards">
+<article class="value-card value-card-blue">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9 12l2 2 4-4"></path></svg></div>
+<h3>Licensing &amp; Procurement</h3>
+<p>Sourcing, quoting, and renewal management across Microsoft, Google, Adobe, and Autodesk agreements.</p>
+</article>
+<article class="value-card value-card-violet">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div>
+<h3>Cloud &amp; Infrastructure</h3>
+<p>Azure and AWS migration, virtualization, backup, and disaster recovery engineering.</p>
+</article>
+<article class="value-card value-card-magenta">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+<h3>Security &amp; Identity</h3>
+<p>Zero Trust rollouts, endpoint protection, email security, and identity governance.</p>
+</article>
+<article class="value-card value-card-green">
+<div class="icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg></div>
+<h3>Managed Support</h3>
+<p>24×7 monitoring, helpdesk, and proactive maintenance once a deployment goes live.</p>
+</article>
+</div>
+</div>
+</section>
+<section id="faq">
+<div class="wrap">
+<div class="section-head center">
+<p class="eyebrow">FAQ</p>
+<h2>Common questions about working with us.</h2>
+</div>
+<div class="faq-list">
+<details class="faq-item" open="" style="--faq-color:#087fc3;--faq-tint:#edf8ff"><summary><span class="faq-q">Q</span>Are you a genuine, authorized partner for the vendors you sell?</summary><p>Yes — our partner and reseller status with Microsoft, Google, Adobe, AWS, Autodesk, Trend Micro, and Seqrite can be verified directly with each vendor. We don't sell through gray-market or unauthorized channels.</p></details>
+<details class="faq-item" style="--faq-color:#6128f2;--faq-tint:#f3efff"><summary><span class="faq-q">Q</span>Do you only work with businesses in Madhya Pradesh?</summary><p>No. We have dedicated on-ground presence across Central India, Chhattisgarh, and the Delhi NCR, and support businesses anywhere else in India remotely with the same standard of service.</p></details>
+<details class="faq-item" style="--faq-color:#07876c;--faq-tint:#ebfaf5"><summary><span class="faq-q">Q</span>We already have an internal IT team — can you still help?</summary><p>Yes. Most of our clients have an internal IT or finance team; we work alongside them to handle procurement, vendor escalation, and specialist deployment work rather than replacing them.</p></details>
+<details class="faq-item" style="--faq-color:#b77816;--faq-tint:#fff7e7"><summary><span class="faq-q">Q</span>How is pricing structured?</summary><p>Licensing is priced at the vendor's published rates through our partner channel; project and support work is quoted based on scope after a discovery call. There's no markup hidden in the license cost.</p></details>
+<details class="faq-item" style="--faq-color:#dc2626;--faq-tint:#fdecec"><summary><span class="faq-q">Q</span>What happens after a project goes live?</summary><p>Every engagement includes a handover to our managed support team, who track renewal dates, monitor security posture, and stay available for ongoing questions — not just a one-time deployment.</p></details>
+</div>
+</div>
+</section>
 <section class="contact" id="about-cta">
 <div class="wrap contact-grid">
 <div>
@@ -384,7 +519,7 @@
 </div>
 </div>
 <aside aria-label="About contact" class="contact-card">
-<img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo-white-original.png" width="220"/>
+<img alt="Rua Technologies logo" decoding="async" height="113" loading="lazy" src="/images/rua-technologies-logo-white-original.png" width="440"/>
 <h3>Speak with Rua Technologies</h3>
 <p>Email or WhatsApp us with what you're working on — we'll route it to the right specialist and follow up the same business day.</p>
 <a class="btn" href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a>
@@ -522,7 +657,7 @@
 <div class="wa-widget" id="waWidget">
 <div aria-label="Chat with Rua Technologies on WhatsApp" class="wa-card" role="dialog">
 <div class="wa-card-head">
-<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="124" loading="lazy" src="images/rua-technologies-icon.png" width="220"/></span>
+<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="381" loading="lazy" src="/images/rua-technologies-icon.png" width="440"/></span>
 <div>
 <b>Rua Technologies</b>
 <span>Typically replies within an hour</span>

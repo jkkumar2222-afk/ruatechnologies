@@ -1,0 +1,61 @@
+# Rua Technologies
+
+> Rua Technologies is a Microsoft, Azure, AWS & Google Workspace partner delivering software licensing, cloud migration, cybersecurity, and managed IT services to growing businesses.
+
+Rua Technologies works with small and mid-sized businesses to plan, license, migrate, secure, and support their IT environments. The company is an authorized reseller/partner for Microsoft, AWS, Google Cloud, Adobe, Zoho, and a range of cybersecurity vendors (Trend Micro, SentinelOne, Sophos, SonicWall, Seqrite, Palo Alto, Kaspersky, Fortinet, ESET, CrowdStrike, Trellix, Forcepoint, Broadcom, Autodesk).
+
+## Core services
+
+- [Managed IT Services](https://ruatechnologies.com/managed-services): ongoing IT management and support for businesses without a large internal IT team.
+- [Cloud Services](https://ruatechnologies.com/cloud-services): cloud migration and management across Azure, AWS, and Google Cloud.
+- [Cybersecurity](https://ruatechnologies.com/cybersecurity): endpoint security, network security, email security, and data loss prevention (DLP).
+- [Software Licensing](https://ruatechnologies.com/licensing): multi-vendor licensing, renewals, and cost optimization.
+- [Consulting](https://ruatechnologies.com/consulting): IT strategy, platform decisions, and roadmap planning.
+- [Support](https://ruatechnologies.com/support): day-to-day technical support and helpdesk services.
+
+## Platforms and vendors
+
+- [Microsoft 365](https://ruatechnologies.com/microsoft-365)
+- [Microsoft Security](https://ruatechnologies.com/microsoft-security)
+- [Microsoft Infrastructure](https://ruatechnologies.com/microsoft-infrastructure)
+- [Azure](https://ruatechnologies.com/azure)
+- [AWS](https://ruatechnologies.com/aws)
+- [Google Cloud](https://ruatechnologies.com/google-cloud)
+- [Google Workspace](https://ruatechnologies.com/google-workspace)
+- [Dynamics 365](https://ruatechnologies.com/dynamics-365)
+- [Adobe](https://ruatechnologies.com/adobe)
+- [Zoho](https://ruatechnologies.com/zoho)
+- [Trend Micro](https://ruatechnologies.com/trend-micro)
+- [Endpoint Security](https://ruatechnologies.com/endpoint-security)
+- [Network Security](https://ruatechnologies.com/network-security)
+- [Email Security](https://ruatechnologies.com/email-security)
+- [Data Loss Prevention (DLP)](https://ruatechnologies.com/dlp)
+- [All Products](https://ruatechnologies.com/all-products)
+
+## Guides and comparisons
+
+- [Azure vs AWS](https://ruatechnologies.com/azure-vs-aws-2026)
+- [Microsoft 365 vs Google Workspace](https://ruatechnologies.com/microsoft-365-vs-google-workspace)
+- [Microsoft 365 Business Basic vs Standard vs Premium](https://ruatechnologies.com/microsoft-365-business-basic-vs-standard-vs-premium-2026)
+- [Microsoft 365 Copilot: Complete Guide](https://ruatechnologies.com/microsoft-365-copilot-complete-guide-2026)
+- [Microsoft 365 Migration Guide](https://ruatechnologies.com/microsoft-365-migration-guide)
+- [Microsoft 365 Backup Guide](https://ruatechnologies.com/microsoft-365-backup-guide)
+- [Microsoft Defender for Business Guide](https://ruatechnologies.com/microsoft-defender-business-guide)
+- [Microsoft Entra ID Guide](https://ruatechnologies.com/microsoft-entra-id-guide)
+- [Zero Trust Security Guide](https://ruatechnologies.com/zero-trust-security-guide)
+- [Top Cybersecurity Threats (2026)](https://ruatechnologies.com/top-cybersecurity-threats-2026)
+- [Business Email Compromise & Ransomware Protection](https://ruatechnologies.com/business-email-compromise-ransomware-protection-2026)
+- [AI Security for Business](https://ruatechnologies.com/ai-security-business-guide)
+- [Blog](https://ruatechnologies.com/blog)
+
+## Company
+
+- [About](https://ruatechnologies.com/about)
+- [Partners & Certifications](https://ruatechnologies.com/partners)
+- [Case Studies](https://ruatechnologies.com/case-studies)
+- [Contact](https://ruatechnologies.com/contact)
+
+## Notes for AI agents
+
+- Pricing is quote-based and depends on licensing tier, user count, and services required; use the [Contact](https://ruatechnologies.com/contact) page to request a quote rather than assuming fixed pricing.
+- Rua Technologies is a reseller/partner, not the vendor itself, for all third-party platforms and software listed above.

@@ -3,6 +3,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#0b3d91"/>
 <title>Zero Trust Security Guide | Rua Technologies</title>
 <meta content="Zero Trust Security Guide (2026): principles, implementation roadmap, Microsoft security technologies, best practices and business benefits." name="description"/>
 <meta content="Zero Trust, Microsoft Zero Trust, Entra ID, Intune, Defender, cybersecurity" name="keywords"/>
@@ -115,7 +121,7 @@
   ]
 }
 </script>
-<link href="style.css" rel="stylesheet"/>
+<link href="/style.css" rel="stylesheet"/>
 <!-- Google Analytics (GA4) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJ2LTMCECV"></script>
 <script>
@@ -126,9 +132,9 @@
 </script>
 <style>
   :root{
-    --ink:#142033; --ink-2:#26364d; --muted:#647084; --faint:#8994a6; --line:#dce3ed;
+    --ink:#142033; --ink-2:#26364d; --muted:#647084; --faint:#6d7684; --line:#dce3ed;
     --panel:#ffffff; --surface:#f5f7fa; --surface-2:#edf2f7;
-    --navy:#0b2a4a; --blue:#0aa8ff; --cyan:#22d7f5; --violet:#6128f2; --magenta:#ff1678;
+    --navy:#0b2a4a; --blue:#0775b2; --cyan:#22d7f5; --violet:#6128f2; --magenta:#ff1678;
     --green:#16705a; --amber:#b77816;
     --shadow:0 18px 50px rgba(23,32,70,.12);
   }
@@ -190,7 +196,7 @@
   .pillar-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
   .pillar-chip{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 12px;text-align:center;}
   .pillar-chip .ic{width:32px;height:32px;border-radius:9px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb, var(--blue) 14%, white);color:var(--blue);}
-  .pillar-chip h4{margin:0 0 4px;font-size:12.5px;color:var(--navy);}
+  .pillar-chip h3{margin:0 0 4px;font-size:12.5px;color:var(--navy);}
   .pillar-chip p{margin:0;font-size:11px;color:var(--muted);}
 
   /* info-grid */
@@ -264,7 +270,7 @@
 <header>
 <div class="wrap nav">
 <a aria-label="Rua Technologies home" class="brand" href="/">
-<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>
+<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="128" src="/images/rua-technologies-logo.png" width="146"/>
 <span>Rua Technologies<small>Enterprise IT Partner</small></span>
 </a>
 <nav aria-label="Primary navigation" role="navigation">
@@ -322,8 +328,8 @@
 <a href="/contact">Contact</a>
 </nav>
 <button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle" type="button">
-<svg class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
-<svg class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
 </button>
 </div>
 <div class="mobile-nav" id="mobileNav">
@@ -461,11 +467,11 @@
 <h2 class="h">The 5 Pillars of Zero Trust</h2>
 <p class="sub">A complete Zero Trust architecture applies these principles consistently across every layer.</p>
 <div class="pillar-strip">
-<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></div><h4>Identity</h4><p>Verify every user</p></div>
-<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="12" rx="1.5" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg></div><h4>Devices</h4><p>Ensure compliance</p></div>
-<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h4>Applications</h4><p>Control app access</p></div>
-<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="10" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h4>Data</h4><p>Classify &amp; protect</p></div>
-<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div><h4>Network</h4><p>Segment &amp; contain</p></div>
+<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></div><h3>Identity</h3><p>Verify every user</p></div>
+<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="12" rx="1.5" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg></div><h3>Devices</h3><p>Ensure compliance</p></div>
+<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h3>Applications</h3><p>Control app access</p></div>
+<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><rect height="10" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h3>Data</h3><p>Classify &amp; protect</p></div>
+<div class="pillar-chip"><div class="ic"><svg fill="none" height="15" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24" width="15"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div><h3>Network</h3><p>Segment &amp; contain</p></div>
 </div>
 </div>
 </section>
@@ -614,7 +620,7 @@
 <div class="wa-widget" id="waWidget">
 <div aria-label="Chat with Rua Technologies on WhatsApp" class="wa-card" role="dialog">
 <div class="wa-card-head">
-<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="124" loading="lazy" src="images/rua-technologies-icon.png" width="220"/></span>
+<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="381" loading="lazy" src="/images/rua-technologies-icon.png" width="440"/></span>
 <div>
 <b>Rua Technologies</b>
 <span>Typically replies within an hour</span>

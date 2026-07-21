@@ -20,11 +20,16 @@
 <meta content="Resources | Rua Technologies" name="twitter:title"/>
 <meta content="Guides on Microsoft 365, Google Workspace, Adobe licensing, Dynamics 365, and cybersecurity for businesses in India, from authorized partner Rua Technologies." name="twitter:description"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Rua Technologies Resources","url":"https://ruatechnologies.com/blog","description":"Guides on Microsoft 365, Google Workspace, Adobe licensing, Dynamics 365, and cybersecurity for businesses in India."}</script>
-<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAIABTAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAhpJREFUeJx1k0FPU0EQx3+7b/e99hWsoUgMeICDxAt6MX4JPfAxvHj0a2ii8Wo8cDNqiAcjmCgaE6RoREmMiRjigSItmraUtu+93fGAaSD0TTKX2Z3fTP75j2q320JOOC9opVAq7wfovAcRKJcMJlBI7ogcgAhERrG4Wme/nWCNIo9xCuAEYgOf/3rmH+6y9LxOoWhwbjjiFEAD4oVb2x2YG2fjjYEtQRVh2BonAA4Y1YoFBPdrh5uX+pTjElv3NMYyVIsBQIAQqMWW+M4yq4/ec3vCczUusbzgqb1SRGdAXA5AeUHiiOT+S24sfMKMddEffvN0yVBFWLxr6DUVygwDiIANcPUmY4+rmCtn6U0J46rK9fkn+Nl1Xq9v8vVdm2Ks8ccEVSeMJAJ7TSRLsbEhiDW2lNBLQ7Z/CucmRymUAsQf20BEGCQKuVDhwYsVNuotnr39xsfvjqWVH1ycmyAsalwmiDDoMdYatNYgIAjiPNcuz3J+7AzNxh8q5Yj9vYAsEaIwRGtFljmCIMB7j1qrfpE0SXHiCa3FOU+v16NQKJAkKSMjRWamp1irblKplGk0msxMT1LbbVAuj6CjyJI5jzWGIAhotQ6IopB+v0+n0yXLHDu1OoIAiiRJOegckqTZkYjd7qForRERvBesCUApkKMW7z3Oeaw1iAhaa7IsI9Aa7wXVarVO+EuOBoEwOGOlFPLfhnKsDvAPK3YP4cM1hxYAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#0b3d91"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/></noscript>
+<link href="/style.css" rel="stylesheet"/>
 <!-- Google Analytics (GA4) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KJ2LTMCECV"></script>
 <script>
@@ -35,99 +40,7 @@
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ruatechnologies.com/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://ruatechnologies.com/blog"}]}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
-<style>
-  /* Layout + colour pass — blog page only */
-  #top section { padding: 52px 0; }
-  #hero { padding: 44px 0 34px; }
-  #top .section-head { margin-bottom: 22px; }
-  #top .section-head.center { margin-bottom: 30px; position: relative; padding-top: 16px; }
-  #top h2 { margin-bottom: 8px; font-size: clamp(26px, 3.2vw, 34px); }
-  #top .eyebrow { margin-bottom: 8px; }
-
-  #articles .section-head.center::before,
-  #knowledge-base .section-head::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 56px; height: 4px;
-    border-radius: 3px;
-  }
-  #articles .section-head.center::before { background: linear-gradient(90deg, var(--blue), var(--violet)); }
-  #knowledge-base .section-head { position: relative; padding-top: 16px; }
-  #knowledge-base .section-head::before { background: linear-gradient(90deg, var(--magenta), #dc2626); left: 0; transform: none; }
-
-  /* Article cards */
-  #articles .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  .article-card {
-    --accent: var(--blue);
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-    padding: 20px;
-    border-top: 3px solid var(--accent);
-    text-decoration: none;
-    color: inherit;
-  }
-  .article-card:nth-child(1) { --accent: var(--blue); }
-  .article-card:nth-child(2) { --accent: var(--violet); }
-  .article-card:nth-child(3) { --accent: var(--magenta); }
-  .article-card:hover { box-shadow: 0 16px 32px -14px color-mix(in srgb, var(--accent) 45%, rgba(20,32,51,0.2)); }
-  .article-badge {
-    display: inline-block;
-    align-self: flex-start;
-    margin-bottom: 12px;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: color-mix(in srgb, var(--accent) 12%, #fff);
-    color: var(--accent);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-  .article-card h3 { margin-bottom: 8px; color: var(--navy); font-size: 16px; }
-  .article-card p { margin-bottom: 14px; color: var(--muted); font-size: 13px; flex: 1; }
-  .article-link { color: var(--accent); font-weight: 700; font-size: 13.5px; }
-
-  /* Knowledge base cards */
-  #knowledge-base .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  .kb-card { --accent: var(--blue); min-height: 0; padding: 20px; border-top: 3px solid var(--accent); }
-  .kb-card:nth-child(6n+1) { --accent: var(--blue); }
-  .kb-card:nth-child(6n+2) { --accent: var(--violet); }
-  .kb-card:nth-child(6n+3) { --accent: var(--magenta); }
-  .kb-card:nth-child(6n+4) { --accent: var(--green); }
-  .kb-card:nth-child(6n+5) { --accent: var(--amber); }
-  .kb-card:nth-child(6n+6) { --accent: #dc2626; }
-  .kb-card:hover { box-shadow: 0 16px 32px -14px color-mix(in srgb, var(--accent) 45%, rgba(20,32,51,0.2)); }
-  .kb-card .icon {
-    width: 36px; height: 36px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    display: grid;
-    place-items: center;
-    color: #fff;
-    background: var(--accent);
-  }
-  .kb-card .icon svg { width: 18px; height: 18px; }
-  .kb-card h3 { margin-bottom: 6px; color: var(--navy); font-size: 15px; }
-  .kb-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
-
-  #blog-cta .contact-grid { gap: 34px; }
-  #blog-cta .contact-lines { margin-top: 16px; gap: 6px; }
-  #blog-cta .contact-line { padding: 12px 0; }
-  #blog-cta .contact-card { padding: 20px; }
-
-  @media (max-width: 900px) {
-    #articles .product-grid, #knowledge-base .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 640px) {
-    #top section { padding: 36px 0; }
-    #hero { padding: 36px 0 26px; }
-    #articles .product-grid, #knowledge-base .product-grid { grid-template-columns: 1fr; }
-  }
-</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Rua Technologies", "url": "https://ruatechnologies.com/", "email": "sales@ruatechnologies.com", "address": {"@type": "PostalAddress", "streetAddress": "Rajats Golden Nest, Katara Hills", "addressLocality": "Bhopal", "postalCode": "462043", "addressRegion": "Madhya Pradesh", "addressCountry": "IN"}, "areaServed": [{"@type": "AdministrativeArea", "name": "Madhya Pradesh"}, {"@type": "AdministrativeArea", "name": "Chhattisgarh"}, {"@type": "AdministrativeArea", "name": "National Capital Region"}, {"@type": "Country", "name": "India"}], "sameAs": []}</script><meta content="#0b3d91" name="theme-color"/><link as_="image" href="images/rua-technologies-logo.png" rel="preload"/> 
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Rua Technologies", "url": "https://ruatechnologies.com/", "email": "sales@ruatechnologies.com", "address": {"@type": "PostalAddress", "streetAddress": "Rajats Golden Nest, Katara Hills", "addressLocality": "Bhopal", "postalCode": "462043", "addressRegion": "Madhya Pradesh", "addressCountry": "IN"}, "areaServed": [{"@type": "AdministrativeArea", "name": "Madhya Pradesh"}, {"@type": "AdministrativeArea", "name": "Chhattisgarh"}, {"@type": "AdministrativeArea", "name": "National Capital Region"}, {"@type": "Country", "name": "India"}], "sameAs": []}</script><meta content="#0b3d91" name="theme-color"/><link as="image" href="/images/rua-technologies-logo.png" rel="preload"/> 
 <style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:9999}</style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Rua Technologies", "url": "https://ruatechnologies.com", "email": "sales@ruatechnologies.com", "sameAs": ["https://www.linkedin.com/company/rua-technologies/about/"]}</script><script type="application/ld+json">
@@ -149,7 +62,7 @@
 <header>
 <div class="wrap nav">
 <a aria-label="Rua Technologies home" class="brand" href="/">
-<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo.png" width="220"/>
+<img alt="Rua Technologies logo" class="brand-logo" decoding="async" height="128" src="/images/rua-technologies-logo.png" width="146"/>
 <span>Rua Technologies<small>Enterprise IT Partner</small></span>
 </a>
 <nav aria-label="Primary navigation" role="navigation">
@@ -207,8 +120,8 @@
 <a href="/contact">Contact</a>
 </nav>
 <button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle" type="button">
-<svg class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
-<svg class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-open" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+<svg aria-hidden="true" class="nav-toggle-close" fill="none" stroke="currentColor" stroke-width="2" style="display:none;" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
 </button>
 </div>
 <div class="mobile-nav" id="mobileNav">
@@ -276,6 +189,7 @@
 <h1>Guides on licensing, cloud, and security for growing teams.</h1>
 <p>Practical explainers on Microsoft 365, Google Workspace, Adobe, Dynamics 365, and cybersecurity — written for IT decision-makers in India comparing plans, providers, and migration paths.</p>
 </div>
+<div class="m365-action"><a class="btn primary" href="#articles">Start reading</a></div>
 </div>
 </section>
 <section class="alt" id="articles">
@@ -358,12 +272,14 @@
 <p>Explore expert articles, buying guides, best practices, migration checklists, and security recommendations from Rua Technologies.</p>
 </div>
 <div class="product-grid">
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h3>Microsoft 365 Business Basic vs Standard vs Premium: Which Plan Is Right for Your Business? (2026)</h3><p>Compare Microsoft 365 Business Basic, Standard and Premium to choose the right plan for your organization.</p></div><div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h3>Microsoft 365</h3><p>Licensing, Copilot, Exchange Online, SharePoint, Teams, Intune, Entra ID, Defender, compliance, migration and administration.</p></div>
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div><h3>Cloud &amp; Azure</h3><p>Azure migration, virtual machines, backup, disaster recovery, networking, identity, storage and cost optimization.</p></div>
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></div><h3>Cybersecurity</h3><p>Endpoint protection, MDR, XDR, ransomware prevention, email security, zero trust, vulnerability management and compliance.</p></div>
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 15l4-6 3 4 5-8"></path></svg></div><h3>Business Applications</h3><p>Dynamics 365, Power Platform, Power BI, Power Apps, Power Automate and AI-driven business automation.</p></div>
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="1.5" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg></div><h3>Infrastructure</h3><p>Servers, virtualization, networking, storage, backup, business continuity and hybrid cloud solutions.</p></div>
-<div class="product-card kb-card"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg></div><h3>Managed IT Services</h3><p>24×7 monitoring, helpdesk, proactive maintenance, IT consulting, licensing management and digital transformation.</p></div>
+<div class="product-card value-card value-card-blue"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h3>Microsoft 365 Business Basic vs Standard vs Premium: Which Plan Is Right for Your Business? (2026)</h3><p>Compare Microsoft 365 Business Basic, Standard and Premium to choose the right plan for your organization.</p></div><div class="product-card value-card value-card-violet"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="8" width="8" x="3" y="3"></rect><rect height="8" width="8" x="13" y="3"></rect><rect height="8" width="8" x="3" y="13"></rect><rect height="8" width="8" x="13" y="13"></rect></svg></div><h3>Microsoft 365</h3><p>Licensing, Copilot, Exchange Online, SharePoint, Teams, Intune, Entra ID, Defender, compliance, migration and administration.</p></div>
+<div class="product-card value-card value-card-magenta"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-7.97A5.5 5.5 0 0 0 7.1 9.06 4 4 0 0 0 7 18z"></path></svg></div><h3>Cloud &amp; Azure</h3><p>Azure migration, virtual machines, backup, disaster recovery, networking, identity, storage and cost optimization.</p></div>
+<div class="product-card value-card value-card-red"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg></div><h3>Cybersecurity</h3><p>Endpoint protection, MDR, XDR, ransomware prevention, email security, zero trust, vulnerability management and compliance.</p></div>
+<div class="product-card value-card value-card-green"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M7 15l4-6 3 4 5-8"></path></svg></div><h3>Business Applications</h3><p>Dynamics 365, Power Platform, Power BI, Power Apps, Power Automate and AI-driven business automation.</p></div>
+<div class="product-card value-card value-card-amber"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="1.5" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg></div><h3>Infrastructure</h3><p>Servers, virtualization, networking, storage, backup, business continuity and hybrid cloud solutions.</p></div>
+<div class="product-card value-card value-card-blue"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><rect height="7" rx="2" width="4" x="3" y="13"></rect><rect height="7" rx="2" width="4" x="17" y="13"></rect><path d="M19 20a2 2 0 0 1-2 2h-3"></path></svg></div><h3>Managed IT Services</h3><p>24×7 monitoring, helpdesk, proactive maintenance, IT consulting, licensing management and digital transformation.</p></div>
+<div class="product-card value-card value-card-violet"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="8" rx="1.5" width="8" x="3" y="3"></rect><path d="M13 7h8M13 11h8M3 17h18M3 21h18"></path></svg></div><h3>Google Workspace</h3><p>Gmail, Google Drive, Docs, Meet, admin console management, migration and collaboration tools for business.</p></div>
+<div class="product-card value-card value-card-magenta"><div class="icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 1 1-8.5-8.5"></path><path d="M12 3.5V12l6 3"></path></svg></div><h3>Licensing &amp; Compliance</h3><p>Software asset management, license optimization, renewals, audits and vendor compliance for growing businesses.</p></div>
 </div>
 </div>
 </section>
@@ -384,7 +300,7 @@
 </div>
 </div>
 <aside aria-label="Resources contact" class="contact-card">
-<img alt="Rua Technologies logo" decoding="async" height="124" loading="lazy" src="images/rua-technologies-logo-white-original.png" width="220"/>
+<img alt="Rua Technologies logo" decoding="async" height="113" loading="lazy" src="/images/rua-technologies-logo-white-original.png" width="440"/>
 <h3>Speak with Rua Technologies</h3>
 <p>Email or WhatsApp us with what you're working on — we'll route it to the right specialist and follow up the same business day.</p>
 <a class="btn" href="mailto:sales@ruatechnologies.com">sales@ruatechnologies.com</a>
@@ -489,7 +405,7 @@
 <div class="wa-widget" id="waWidget">
 <div aria-label="Chat with Rua Technologies on WhatsApp" class="wa-card" role="dialog">
 <div class="wa-card-head">
-<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="124" loading="lazy" src="images/rua-technologies-icon.png" width="220"/></span>
+<span class="wa-card-avatar"><img alt="Rua Technologies" decoding="async" height="381" loading="lazy" src="/images/rua-technologies-icon.png" width="440"/></span>
 <div>
 <b>Rua Technologies</b>
 <span>Typically replies within an hour</span>

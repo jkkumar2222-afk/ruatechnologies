@@ -20,7 +20,7 @@
       }
     },
     {
-      "route": "/style.css",
+      "route": "/style.v2.css",
       "headers": {
         "Cache-Control": "public, max-age=604800"
       }

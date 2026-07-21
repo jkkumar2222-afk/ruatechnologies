@@ -94,5 +94,37 @@ This is a general-purpose terms template prepared for Rua Technologies' website.
 <div class="wrap">© 2026 Rua Technologies. All rights reserved.</div>
 </footer>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruatechnologies.com/"}, {"@type": "ListItem", "position": 2, "name": "Terms", "item": "https://ruatechnologies.com/terms"}]}</script>
+<div id="rua-nav-progress"></div>
+<script>
+(function(){
+  // Give clicks on internal links instant visual feedback (a thin top
+  // progress bar) since a full page navigation has no built-in loading
+  // indicator of its own.
+  var bar = document.getElementById('rua-nav-progress');
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var url;
+    try { url = new URL(a.href, location.href); } catch(err) { return; }
+    if (url.origin !== location.origin) return;
+    if (a.target && a.target !== '' && a.target !== '_self') return;
+    if (a.hasAttribute('download')) return;
+    if (url.pathname === location.pathname && url.search === location.search) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    bar.classList.add('active');
+  });
+  window.addEventListener('pageshow', function(){
+    bar.classList.remove('active');
+  });
+})();
+</script>
+<script type="speculationrules">
+{
+  "prerender": [{
+    "where": { "href_matches": "/*" },
+    "eagerness": "conservative"
+  }]
+}
+</script>
 </body>
 </html>

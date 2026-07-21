@@ -59,3 +59,12 @@ main { view-transition-name: site-main; }
 @media (prefers-reduced-motion: reduce) {
   @view-transition { navigation: none; }
 }
+
+/* Prevent logo/icon snapshots from stretching if header/footer height
+   differs slightly between pages during the transition. */
+::view-transition-old(site-header),
+::view-transition-new(site-header),
+::view-transition-old(site-footer),
+::view-transition-new(site-footer) {
+  object-fit: cover;
+}

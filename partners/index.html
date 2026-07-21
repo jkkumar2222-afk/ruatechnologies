@@ -598,9 +598,28 @@
 {
   "prerender": [{
     "where": { "href_matches": "/*" },
-    "eagerness": "conservative"
+    "eagerness": "moderate"
   }]
 }
+</script>
+<script>
+(function(){
+  // Diagnostic only, no visible effect: logs to the console whether the
+  // native page transition actually ran, and why not if it didn't (most
+  // commonly the browser's built-in 4-second "page not ready yet" cutoff).
+  // Safe to leave in permanently since it only writes to devtools.
+  window.addEventListener('pagereveal', function(e){
+    if (!e.viewTransition) {
+      console.log('[rua] no transition on this load (opted out, cross-origin, or first load)');
+      return;
+    }
+    e.viewTransition.finished.then(function(){
+      console.log('[rua] page transition completed \u2705');
+    }).catch(function(err){
+      console.warn('[rua] page transition aborted:', err.name, err.message);
+    });
+  });
+})();
 </script>
 </body>
 </html>

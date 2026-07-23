@@ -30,6 +30,12 @@
       "headers": {
         "Cache-Control": "public, max-age=2592000"
       }
+    },
+    {
+      "route": "/*.html",
+      "headers": {
+        "Cache-Control": "public, max-age=300, must-revalidate"
+      }
     }
   ]
 }

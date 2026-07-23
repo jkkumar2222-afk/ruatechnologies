@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /downloads/cloud-migration-checklist.pdf
 Sitemap: https://ruatechnologies.com/sitemap.xml
